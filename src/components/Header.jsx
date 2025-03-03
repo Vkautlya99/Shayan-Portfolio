@@ -31,7 +31,7 @@ const Header = () => {
       </div>
 
       {/* Navigation Links */}
-      <div className="flex items-center gap-10 px-16 lg:gap-20 text-md">
+      <div className="flex items-center gap-4  lg:px-8 lg:gap-20 text-md">
         {[
           { name: "Home", path: "/" },
           { name: "About", path: "/about" },
