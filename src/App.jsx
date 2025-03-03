@@ -5,7 +5,7 @@ import Contact from "./pages/Contact";
 
 const App = () => {
   return (
-    <div className="w-full">
+    <div className="">
       <BrowserRouter>
         <Routes>
           <Route index path="/" element={<Home />} />

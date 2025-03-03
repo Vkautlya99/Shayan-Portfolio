@@ -13,7 +13,7 @@ const Intro = () => {
   }, []);
 
   return (
-    <div className="w-[90vw] lg:w-[60vw] mx-auto my-10 border-gray-200 shadow-lg rounded-xl p-6 bg-gradient-to-b from-white to-gray-100">
+    <div className="w-full max-w-[90vw] lg:max-w-[60vw] mx-auto overflow-x-hidden my-10 border-gray-200 shadow-lg rounded-xl p-6 bg-gradient-to-b from-white to-gray-100">
       {/* Name Heading */}
       <h1
         className="text-center text-3xl lg:text-5xl text-gray-800 font-extrabold font-mono mb-8 tracking-wide drop-shadow-lg"

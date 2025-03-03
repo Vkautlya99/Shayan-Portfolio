@@ -11,7 +11,7 @@ const Header = () => {
 
   return (
     <nav
-      className="bg-gradient-to-r from-teal-300 to-teal-700 py-3 rounded-4xl my-2 w-full md:w-full max-w-[930px] mx-auto flex items-center justify-between px-2 shadow-lg"
+      className=" bg-gradient-to-r from-teal-300 to-teal-700 py-3 rounded-4xl my-2 w-[90%] max-w-[930px] mx-auto overflow-x-hidden flex items-center justify-between px-3 shadow-lg"
       data-aos="fade-down"
     >
       {/* Logo/Image */}
@@ -31,7 +31,7 @@ const Header = () => {
       </div>
 
       {/* Navigation Links */}
-      <div className="flex items-center gap-4 px-8 lg:gap-8 text-md">
+      <div className="flex items-center gap-10 px-16 lg:gap-20 text-md">
         {[
           { name: "Home", path: "/" },
           { name: "About", path: "/about" },

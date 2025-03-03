@@ -1,7 +1,8 @@
 @import "tailwindcss";
 
-.about-image-section{
-    width: 250px;
-    margin: auto;
-}
+
+body {
+    overflow-x: hidden;
+  }
+  
 
