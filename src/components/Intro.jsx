@@ -86,7 +86,7 @@ const Intro = () => {
         <img
           src={mainimage}
           alt="Shayan Krishna"
-          className="w-[70vw] lg:w-[35vw] lg:h-[35vw] rounded-full border-4 border-yellow-500 shadow-2xl hover:scale-105 transition-transform duration-500"
+          className="w-[70vw] lg:w-[35vw] lg:h-[35vw] rounded-2xl border-4 border-yellow-500 shadow-2xl hover:scale-105 transition-transform duration-500"
         />
       </div>
 
