@@ -6,8 +6,28 @@ import { SiImdb } from "react-icons/si";
 import { FaInstagram } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { IoLogoYoutube } from "react-icons/io";
+import PopularVideoCards from "./PopularVideoCards";
 
 const Intro = () => {
+  const videos = [
+    {
+      title: "Popular Video 1",
+      videoUrl: "https://www.youtube.com/embed/uVjAGH-Nodc", // Replace with actual YouTube embedURL
+  },
+    {
+      title: "Popular Video 2",
+      videoUrl: "https://youtube.com/embed/Ntu8CvaxK2w", // Replace with actual YouTube embedURL
+  },
+    {
+      title: "Popular Video 3",
+      videoUrl: "https://youtube.com/embed/32YJsVAcDng", // Replace with actual YouTube embedURL
+  },
+    {
+      title: "Popular Video 4",
+      videoUrl: "https://youtube.com/embed/ONlkCVFWQSA", // Replace with actual YouTube embedURL
+  },
+  ];
+
   useEffect(() => {
     AOS.init({ duration: 1200, once: true });
   }, []);
@@ -82,7 +102,7 @@ const Intro = () => {
       </div>
 
       {/* Profile Image */}
-      <div className="flex justify-center mt-10" data-aos="flip-up">
+      <div className="flex justify-center mt-20" data-aos="flip-up">
         <img
           src={mainimage}
           alt="Shayan Krishna"
@@ -169,49 +189,13 @@ const Intro = () => {
         promote South Asian history and traditions globally.
       </p>
 
-      <p
-        className="mt-8 text-gray-700 text-lg leading-8 text-justify px-4"
-        data-aos="fade-left"
-      >
-        Apart from his professional achievements, Shayan is an individual with
-        diverse interests. He is an avid traveler and has explored over 20
-        countries, immersing himself in different cultures and traditions. He
-        loves adventure sports, including paragliding, scuba diving, and
-        trekking in the Himalayas. His passion for fitness is evident through
-        his dedication to yoga and martial arts.
-      </p>
-
-      <p
-        className="mt-8 text-gray-700 text-lg leading-8 text-justify px-4"
-        data-aos="fade-right"
-      >
-        In his free time, Shayan enjoys reading books on philosophy, history,
-        and personal development. He is also a skilled musician and enjoys
-        playing the guitar and composing music. His love for dance has led him
-        to learn various forms, including contemporary, hip-hop, and classical
-        Indian dance styles.
-      </p>
-
-      <p
-        className="mt-8 text-gray-700 text-lg leading-8 text-justify px-4"
-        data-aos="fade-up"
-      >
-        A strong believer in the power of social media, Shayan utilizes his
-        platform to spread positivity, awareness, and motivation. With millions
-        of followers across various social media platforms, he continuously
-        inspires young individuals to chase their dreams fearlessly and stand up
-        for causes they believe in.
-      </p>
-
-      <p
-        className="mt-8 text-gray-700 text-lg leading-8 text-justify px-4"
-        data-aos="fade-left"
-      >
-        Shayan Krishna's journey is one of resilience, ambition, and purpose.
-        From being a small-town dreamer to a globally recognized personality, he
-        has redefined success through his dedication, hard work, and commitment
-        to making a difference in the world.
-      </p>
+      {/* Construction Update Section */}
+      <h1 className="text-3xl md:text-4xl font-bold text-gray-800 my-10 text-center">
+        Most Popular Videos 
+      </h1>
+      {videos.map((video, index) => (
+        <PopularVideoCards key={index} {...video}/>
+        ))}
     </div>
   );
 };

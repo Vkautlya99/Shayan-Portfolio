@@ -23,7 +23,7 @@ const Header = () => {
         <img
           src={navimage}
           alt="Logo"
-          className="w-[45px] h-[45px] rounded-full border-2 border-gray-400 shadow-md hover:scale-105 transition-transform duration-500"
+          className="w-[45px] h-[45px] rounded-full border-2 border-gray-400 shadow-md hover:scale-115 transition-transform duration-500"
           data-aos="zoom-in"
           data-aos-duration="1500"
         />
@@ -31,10 +31,10 @@ const Header = () => {
       </div>
 
       {/* Navigation Links */}
-      <div className="flex items-center gap-4  lg:px-8 lg:gap-20 text-md">
+      <div className="flex items-center gap-3 lg:gap-16 px-2 text-md">
         {[
           { name: "Home", path: "/" },
-          { name: "About", path: "/about" },
+          { name: "Photos", path: "/photos" },
           { name: "Contact", path: "/contact" }
         ].map((item, index) => (
           <Link key={item.name} to={item.path} data-aos="fade-left" data-aos-delay={index * 200}>
@@ -49,3 +49,7 @@ const Header = () => {
 };
 
 export default Header;
+
+
+
+
