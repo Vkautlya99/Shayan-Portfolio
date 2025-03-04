@@ -52,7 +52,6 @@ const About = () => {
   return (
     <>
       <Helmet>
-<<<<<<< HEAD
         <title>About Shayan Krishna - Model, Actor & Activist</title>
         <meta 
           name="description" 
@@ -70,13 +69,6 @@ const About = () => {
           property="og:description" 
           content="Discover the inspiring journey of Shayan Krishna, from modeling and acting to activism and global recognition." 
         />
-=======
-        <title>Photos Of - Shayan Krishna</title>
-        <meta name="description" content="Learn more about Shayan Krishna, a passionate Model & Actor skilled in real time acting and model shootouts." />
-        <meta name="keywords" content="Shayan Krishna a model, an actor, a philanthrophist, an american" />
-        <meta property="og:title" content="About Shayan Krishna" />
-        <meta property="og:description" content="Discover my journey, skills, and experience Modelling & Acting." />
->>>>>>> dfd6fab (youtube video add)
         <meta property="og:url" content="https://shayan-portfolio.onrender.com/about" />
         <meta property="og:type" content="profile" />
         <meta property="og:image" content="https://shayan-portfolio.onrender.com/profile.jpg" />
