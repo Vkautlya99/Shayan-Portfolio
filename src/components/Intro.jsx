@@ -9,7 +9,7 @@ import { IoLogoYoutube } from "react-icons/io";
 
 const Intro = () => {
   useEffect(() => {
-    // AOS.init({ duration: 1200, once: true });
+    AOS.init({ duration: 1200, once: true });
   }, []);
 
   return (
@@ -24,18 +24,18 @@ const Intro = () => {
 
       {/* Profession Section */}
       <div
-        className="lg:w-[35vw] mx-auto flex flex-wrap justify-center gap-6 p-6 border-gray-300 shadow-xl rounded-2xl bg-white"
+        className="lg:w-[35vw] items-center mx-auto flex flex-wrap justify-center gap-6 p-6 border-gray-300 shadow-xl rounded-2xl bg-white"
         data-aos="zoom-in"
       >
         {[
           "Actor",
-          "Model",
+          "Published Model",
           "Television Panelist",
           "Social Media Influencer",
         ].map((title, index) => (
           <h3
             key={index}
-            className="text-xl lg:text-2xl font-semibold text-yellow-500 font-mono hover:scale-110 transition-transform duration-300 ease-in-out cursor-pointer hover:text-yellow-400"
+            className="text-xl text-center lg:text-2xl font-semibold text-yellow-500 font-mono hover:scale-110 transition-transform duration-300 ease-in-out cursor-pointer hover:text-yellow-400"
           >
             {title}
           </h3>
