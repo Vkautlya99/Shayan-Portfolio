@@ -10,129 +10,49 @@ import PopularVideoCards from "./PopularVideoCards";
 
 const Intro = () => {
   const videos = [
-    {
-      title: "Popular Video 1",
-      videoUrl: "https://www.youtube.com/embed/uVjAGH-Nodc", // Replace with actual YouTube embedURL
-  },
-    {
-      title: "Popular Video 2",
-      videoUrl: "https://youtube.com/embed/Ntu8CvaxK2w", // Replace with actual YouTube embedURL
-  },
-    {
-      title: "Popular Video 3",
-      videoUrl: "https://youtube.com/embed/32YJsVAcDng", // Replace with actual YouTube embedURL
-  },
-    {
-      title: "Popular Video 4",
-      videoUrl: "https://youtube.com/embed/ONlkCVFWQSA", // Replace with actual YouTube embedURL
-  },
+    { videoUrl: "https://www.youtube.com/embed/uVjAGH-Nodc" },
+    { videoUrl: "https://youtube.com/embed/Ntu8CvaxK2w" },
+    { videoUrl: "https://youtube.com/embed/32YJsVAcDng" },
+    { videoUrl: "https://youtube.com/embed/ONlkCVFWQSA" },
   ];
 
   useEffect(() => {
-    AOS.init({ duration: 1200, once: true });
+    AOS.init({ duration: 1200, once: false, mirror: true });
   }, []);
 
   return (
     <div className="w-full max-w-[90vw] lg:max-w-[60vw] mx-auto overflow-x-hidden my-10 border-gray-200 shadow-lg rounded-xl p-6 bg-gradient-to-b from-white to-gray-100">
-      {/* Name Heading */}
-      <h1
-        className="text-center text-5xl text-gray-800 font-extrabold font-mono mb-8 tracking-wide drop-shadow-lg"
-        data-aos="fade-down"
-      >
+      <h1 className="text-center text-5xl lg:text-6xl text-gray-800 font-extrabold font-mono mb-8 tracking-wide drop-shadow-lg" data-aos="fade-down">
         Shayan Krishna
       </h1>
 
-      {/* Profession Section */}
-      <div
-        className="lg:w-[35vw] items-center mx-auto flex flex-wrap justify-center gap-6 p-6 border-gray-300 shadow-xl rounded-2xl bg-white"
-        data-aos="zoom-in"
-      >
-        {[
-          "Actor",
-          "Published Model",
-          "Television Panelist",
-          "Social Media Influencer",
-        ].map((title, index) => (
-          <h3
-            key={index}
-            className="text-xl text-center lg:text-2xl font-semibold text-yellow-500 font-mono hover:scale-110 transition-transform duration-300 ease-in-out cursor-pointer hover:text-yellow-400"
-          >
+      <div className="lg:w-[35vw] mx-auto text-center flex flex-wrap justify-center gap-6 p-6 border-gray-300 shadow-xl rounded-2xl bg-white" data-aos="zoom-in">
+        {["Actor", "Published Model", "Television Panelist", "Social Media Influencer"].map((title, index) => (
+          <h3 key={index} className="text-xl lg:text-2xl font-semibold text-yellow-500 font-mono hover:scale-110 transition-transform duration-300 ease-in-out cursor-pointer hover:text-yellow-400">
             {title}
           </h3>
         ))}
       </div>
 
-      {/* Social Media Section */}
-      <div
-        className=" mt-8 flex flex-wrap justify-center gap-13 bg-black p-4 rounded-lg shadow-lg"
-        data-aos="fade-up"
-      >
+      <div className="mt-8 flex flex-wrap justify-center gap-10 bg-black p-4 rounded-lg shadow-lg" data-aos="fade-up">
         {[
-          {
-            name: "IMDb",
-            url: "https://www.imdb.com/name/nm16441191/",
-            icon: <SiImdb />,
-          },
-          {
-            name: "Instagram",
-            url: "https://www.instagram.com/theblondedesi/?hl=en",
-            icon: <FaInstagram />,
-          },
-          {
-            name: "X",
-            url: "https://www.instagram.com/theblondedesi/?hl=en",
-            icon: <FaXTwitter />,
-          },
-          {
-            name: "YouTube",
-            url: "https://www.youtube.com/@ShayanKrishna",
-            icon: <IoLogoYoutube />,
-          },
+          { name: "IMDb", url: "https://www.imdb.com/name/nm16441191/", icon: <SiImdb /> },
+          { name: "Instagram", url: "https://www.instagram.com/theblondedesi/?hl=en", icon: <FaInstagram /> },
+          { name: "X", url: "https://www.instagram.com/theblondedesi/?hl=en", icon: <FaXTwitter /> },
+          { name: "YouTube", url: "https://www.youtube.com/@ShayanKrishna", icon: <IoLogoYoutube /> },
         ].map((social, index) => (
-          <a
-            key={index}
-            href={social.url}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-yellow-500 text-xl font-bold flex items-center gap-2 hover:text-yellow-400 hover:scale-110 transition-all duration-300"
-          >
+          <a key={index} href={social.url} target="_blank" rel="noopener noreferrer" className="text-yellow-500 text-xl font-bold flex items-center gap-2 hover:text-yellow-400 hover:scale-110 transition-all duration-300">
             {social.icon} {social.name}
           </a>
         ))}
       </div>
 
-      {/* Profile Image */}
       <div className="flex justify-center mt-20" data-aos="flip-up">
-        <img
-          src={mainimage}
-          alt="Shayan Krishna"
-          className="w-[70vw] lg:w-[35vw] lg:h-[35vw] rounded-2xl border-4 border-yellow-500 shadow-2xl hover:scale-105 transition-transform duration-500"
-        />
+        <img src={mainimage} alt="Shayan Krishna" className="w-[70vw] lg:w-[35vw] lg:h-[35vw] rounded-2xl border-4 border-yellow-500 shadow-2xl hover:scale-105 transition-transform duration-500" />
       </div>
 
-      {/* Biography */}
-      <p
-        className="mt-8 text-gray-700 text-lg leading-8 text-justify px-4"
-        data-aos="fade-right"
-      >
-        <span className="font-bold text-gray-900 text-xl font-mono">
-          SHAYAN KRISHNA
-        </span>{" "}
-        also known as{" "}
-        <span className="italic text-yellow-600">"The Blonde Desi"</span>, is an
-        Actor, Model, Global Activist, and a TV Panelist. He graduated from the
-        prestigious <strong>American Musical and Dramatic Academy (AOS)</strong>{" "}
-        with a degree in Acting.
-        <br />
-        <br />
-        He is a global icon, traveling extensively across the United States,
-        United Kingdom, India, and Pakistan for film shoots, modeling, and
-        motivational speeches. Recognized for his outstanding contributions, he
-        has achieved:
-      </p>
-
-      {/* Achievements Section */}
-      <ul
+       {/* Achievements Section */}
+       <ul
         className="list-disc pl-6 mt-4 text-gray-700 text-lg leading-8"
         data-aos="fade-up"
       >
@@ -189,13 +109,12 @@ const Intro = () => {
         promote South Asian history and traditions globally.
       </p>
 
-      {/* Construction Update Section */}
-      <h1 className="text-3xl md:text-4xl font-bold text-gray-800 my-10 text-center">
-        Most Popular Videos 
-      </h1>
+      <h1 className="text-3xl md:text-4xl font-bold text-gray-800 my-10 text-center">Most Popular Videos</h1>
       {videos.map((video, index) => (
-        <PopularVideoCards key={index} {...video}/>
-        ))}
+        <div data-aos="fade-in" key={index}>
+          <PopularVideoCards {...video} />
+        </div>
+      ))}
     </div>
   );
 };
