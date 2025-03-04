@@ -28,6 +28,7 @@ import about22image from "../assets/images/about22.jpg";
 import about23image from "../assets/images/about23.jpg";
 import about24image from "../assets/images/about24.jpg";
 import about25image from "../assets/images/about25.jpg";
+import { Helmet } from 'react-helmet-async';
 
 const About = () => {
   useEffect(() => {
@@ -49,9 +50,28 @@ const About = () => {
   ];
 
   return (
-    <div>
-      <Header />
-      <div id="accordion" className="p-4">
+    <>
+      <Helmet>
+        <title>About Me - Shayan Krishna</title>
+        <meta name="description" content="Learn more about Shayan Krishna, a passionate web developer skilled in React, JavaScript, and Tailwind CSS." />
+        <meta name="keywords" content="Shayan Krishna, about, web developer, React, JavaScript, Tailwind CSS" />
+        <meta property="og:title" content="About Shayan Krishna" />
+        <meta property="og:description" content="Discover my journey, skills, and experience in web development." />
+        <meta property="og:url" content="https://shayan-portfolio.onrender.com/about" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://shayan-portfolio.onrender.com/preview-about.jpg" />
+        <meta name="robots" content="index, follow" />
+      </Helmet>
+      {/* <Header /> */}
+
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-3 p-4">
+        {images.map((image, index) => (
+          <div data-aos="fade-up" key={index}>
+            <AboutCard imageUrl={image} altText={`Image ${index + 1}`} />
+          </div>
+        ))}
+      </div>
+      <div id="accordion" className="w-[90%] p-5 mx-auto">
         {["What is Flowbite?", "Is there a Figma file available?", "What are the differences between Flowbite and Tailwind UI?"].map((title, index) => (
           <div key={index}>
             <h2>
@@ -81,15 +101,7 @@ const About = () => {
           </div>
         ))}
       </div>
-
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-3 p-4">
-        {images.map((image, index) => (
-          <div data-aos="fade-up" key={index}>
-            <AboutCard imageUrl={image} altText={`Image ${index + 1}`} />
-          </div>
-        ))}
-      </div>
-    </div>
+    </>
   );
 };
 
