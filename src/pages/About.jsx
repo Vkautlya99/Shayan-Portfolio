@@ -52,17 +52,39 @@ const About = () => {
   return (
     <>
       <Helmet>
-        <title>About Me - Shayan Krishna</title>
-        <meta name="description" content="Learn more about Shayan Krishna, a passionate web developer skilled in React, JavaScript, and Tailwind CSS." />
-        <meta name="keywords" content="Shayan Krishna, about, web developer, React, JavaScript, Tailwind CSS" />
-        <meta property="og:title" content="About Shayan Krishna" />
-        <meta property="og:description" content="Discover my journey, skills, and experience in web development." />
+        <title>About Shayan Krishna - Model, Actor & Activist</title>
+        <meta 
+          name="description" 
+          content="Learn more about Shayan Krishna, an internationally published model, actor, and activist. Featured in major media outlets worldwide." 
+        />
+        <meta 
+          name="keywords" 
+          content="Shayan Krishna, biography, model, actor, activist, Bollywood, Hollywood, fashion, media personality" 
+        />
+        <meta name="author" content="Shayan Krishna" />
+
+        {/* Open Graph for Social Media */}
+        <meta property="og:title" content="About Shayan Krishna - Model, Actor & Activist" />
+        <meta 
+          property="og:description" 
+          content="Discover the inspiring journey of Shayan Krishna, from modeling and acting to activism and global recognition." 
+        />
         <meta property="og:url" content="https://shayan-portfolio.onrender.com/about" />
-        <meta property="og:type" content="website" />
-        <meta property="og:image" content="https://shayan-portfolio.onrender.com/preview-about.jpg" />
+        <meta property="og:type" content="profile" />
+        <meta property="og:image" content="https://shayan-portfolio.onrender.com/profile.jpg" />
+
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="About Shayan Krishna - Model, Actor & Activist" />
+        <meta 
+          name="twitter:description" 
+          content="Explore the background of Shayan Krishna, an internationally recognized model, actor, and activist." 
+        />
+        <meta name="twitter:image" content="https://shayan-portfolio.onrender.com/profile.jpg" />
+
+        {/* Indexing */}
         <meta name="robots" content="index, follow" />
       </Helmet>
-      {/* <Header /> */}
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-3 p-4">
         {images.map((image, index) => (
