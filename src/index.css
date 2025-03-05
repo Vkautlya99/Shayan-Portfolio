@@ -5,4 +5,16 @@ body {
     overflow-x: hidden;
   }
   
-
+  /* @keyframes rotate360 {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  [data-aos="custom-rotate"] {
+    animation: rotate360 1.2s ease-in-out forwards;
+  } */
+  

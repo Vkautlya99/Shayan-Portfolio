@@ -10,9 +10,9 @@ const Footer = () => {
         &copy; {new Date().getFullYear()} Vikram Kumar. All Rights Reserved.
       </h2>
       <p className="mt-2 text-sm">
-        Developed by {" "}
+        Contact For Your  {" "}
         <span className="font-bold transition-all duration-300 text-yellow-300 ">
-        Vikram Kumar
+        Bussiness Needs
         </span>
       </p>
 

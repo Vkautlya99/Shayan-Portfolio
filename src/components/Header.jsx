@@ -16,7 +16,7 @@ const Header = () => {
     >
       {/* Logo/Image */}
       <Link
-        to="/"
+        to="/workandachievements"
         className="flex items-center gap-2 text-gray-700 text-lg font-bold font-mono"
         data-aos="fade-right"
         data-aos-duration="1200"
@@ -25,10 +25,10 @@ const Header = () => {
           src={navimage}
           alt="Logo"
           className="w-[45px] h-[45px] rounded-full border-2 border-gray-400 shadow-md hover:scale-115 transition-transform duration-500"
-          data-aos="zoom-in"
-          data-aos-duration="1500"
+          // data-aos="zoom-in"
+          // data-aos-duration="1500"
         />
-        <span className="hidden sm:flex">Shayan Krishna</span> {/* Hidden on smaller screens */}
+        <span className="hidden sm:flex">Shayan Krishna</span> 
       </Link>
 
       {/* Navigation Links */}
@@ -45,7 +45,7 @@ const Header = () => {
             data-aos="fade-left"
             data-aos-delay={index * 200}
           >
-            <h3 className="font-bold text-gray-300 hover:text-white hover:underline cursor-pointer hover:scale-110 transition-transform duration-300">
+            <h3 className="font-bold text-gray-300 md:text-lg hover:text-white hover:underline cursor-pointer hover:scale-110 transition-transform duration-300">
               {item.name}
             </h3>
           </Link>

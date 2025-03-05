@@ -28,50 +28,76 @@ const Intro = () => {
       >
         Shayan Krishna
       </h1>
+      <div
+        className="lg:w-[35vw] mx-auto text-center flex flex-wrap justify-center gap-6 p-6 border-gray-300 shadow-xl rounded-2xl bg-white"
+        data-aos="zoom-in"
+      >
+        {[
+          "Actor",
+          "Published Model",
+          "Television Panelist",
+          "Social Media Influencer",
+        ].map((title, index) => (
+          <h3
+            key={index}
+            className="text-xl lg:text-5xl font-semibold text-yellow-500 font-mono hover:scale-110 transition-transform duration-300 ease-in-out cursor-pointer hover:text-yellow-400"
+          >
+            {title}
+          </h3>
+        ))}
+      </div>
 
       <div
-        className="flex flex-col md:flex-row justify-around items-center bg-gray-950 p-6 rounded-lg shadow-lg"
+        className="mt-8 flex flex-wrap justify-center gap-10 bg-black p-4 rounded-lg shadow-lg"
         data-aos="fade-up"
       >
-        <div
-          className="text-white text-lg space-y-3 text-mono"
-          data-aos="fade-right"
-          data-aos-duration="1200"
-          data-aos-easing="ease-in-out"
-        >
-          <p className="transform transition-all duration-500 hover:scale-105 hover:shadow-lg">
-            <strong>Name:</strong> Shayan Krishna
-          </p>
-          <p className="transform transition-all duration-500 hover:scale-105 hover:shadow-lg">
-            <strong>Born:</strong> 28 September, 2004
-          </p>
-          <p className="transform transition-all duration-500 hover:scale-105 hover:shadow-lg">
-            <strong>Place of Birth:</strong> Karachi, Pakistan
-          </p>
-          <p className="transform transition-all duration-500 hover:scale-105 hover:shadow-lg">
-            <strong>Residing Country:</strong> United States of America (USA)
-          </p>
-          <p className="transform transition-all duration-500 hover:scale-105 hover:shadow-lg">
-            <strong>State:</strong> Los Angeles, California - 90001
-          </p>
-          <p className="transform transition-all duration-500 hover:scale-105 hover:shadow-lg">
-            <strong>Height:</strong> 6'1" (1.85 m)
-          </p>
-          <p className="transform transition-all duration-500 hover:scale-105 hover:shadow-lg">
-            <strong>Weight:</strong> 70 KG
-          </p>
-          <p className="transform transition-all duration-500 hover:scale-105 hover:shadow-lg">
-            <strong>Favorite Actor:</strong> Shahrukh Khan & Tom Cruise
-          </p>
-        </div>
-
-        <img
-          src={mainimage}
-          alt="Shayan Krishna"
-          className="w-[60vw] lg:w-[30vw] rounded-xl border-4 border-yellow-500 shadow-xl hover:scale-105 transition-transform duration-500"
-          data-aos="zoom-in"
-        />
+        {[
+          {
+            name: "IMDb",
+            url: "https://www.imdb.com/name/nm16441191/",
+            icon: <SiImdb />,
+          },
+          {
+            name: "Instagram",
+            url: "https://www.instagram.com/theblondedesi/?hl=en",
+            icon: <FaInstagram />,
+          },
+          {
+            name: "X",
+            url: "https://www.instagram.com/theblondedesi/?hl=en",
+            icon: <FaXTwitter />,
+          },
+          {
+            name: "YouTube",
+            url: "https://www.youtube.com/@ShayanKrishna",
+            icon: <IoLogoYoutube />,
+          },
+        ].map((social, index) => (
+          <a
+            key={index}
+            href={social.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-yellow-500 text-xl font-bold flex items-center gap-2 hover:text-yellow-400 hover:scale-110 transition-all duration-300"
+          >
+            {social.icon} {social.name}
+          </a>
+        ))}
       </div>
+
+      <div
+  className="mt-8 flex flex-col md:flex-row justify-around items-center p-4 sm:gap-4"
+  data-aos="fade-up"
+>
+  <img
+    src={mainimage}
+    alt="Shayan Krishna"
+    className="w-[60vw] lg:w-[30vw] rounded-xl border-4 border-yellow-500 shadow-xl 
+       cursor-pointer hover:scale-105 duration-500 transition-transform transform-flat "
+    
+  />
+</div>
+
 
       {/* Modeling Section */}
       <h2
