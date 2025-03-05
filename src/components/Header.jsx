@@ -11,11 +11,12 @@ const Header = () => {
 
   return (
     <nav
-      className=" bg-gradient-to-r from-teal-300 to-teal-700 py-3 rounded-4xl my-2 w-[90%] max-w-[930px] mx-auto overflow-x-hidden flex items-center justify-between px-3 shadow-lg"
+      className="bg-gradient-to-r from-teal-300 to-teal-700 py-3 rounded-4xl my-2 w-[90%] max-w-[930px] mx-auto overflow-x-hidden flex items-center justify-between px-3 shadow-lg"
       data-aos="fade-down"
     >
       {/* Logo/Image */}
-      <Link to="/"
+      <Link
+        to="/"
         className="flex items-center gap-2 text-gray-700 text-lg font-bold font-mono"
         data-aos="fade-right"
         data-aos-duration="1200"
@@ -27,17 +28,23 @@ const Header = () => {
           data-aos="zoom-in"
           data-aos-duration="1500"
         />
-        Shayan Krishna
+        <span className="hidden sm:flex">Shayan Krishna</span> {/* Hidden on smaller screens */}
       </Link>
 
       {/* Navigation Links */}
-      <div className="flex items-center gap-3 lg:gap-16 px-2 text-md">
+      <div className="flex text-center items-center gap-7 md:gap-6 lg:gap-16 xl:gap-12 px-2 text-sm sm:text-md">
         {[
           { name: "Home", path: "/" },
           { name: "Photos", path: "/photos" },
-          { name: "Contact", path: "/contact" }
+          { name: "Work", path: "/workandachievements" },
+          { name: "Contact", path: "/contact" },
         ].map((item, index) => (
-          <Link key={item.name} to={item.path} data-aos="fade-left" data-aos-delay={index * 200}>
+          <Link
+            key={item.name}
+            to={item.path}
+            data-aos="fade-left"
+            data-aos-delay={index * 200}
+          >
             <h3 className="font-bold text-gray-300 hover:text-white hover:underline cursor-pointer hover:scale-110 transition-transform duration-300">
               {item.name}
             </h3>
@@ -49,7 +56,3 @@ const Header = () => {
 };
 
 export default Header;
-
-
-
-

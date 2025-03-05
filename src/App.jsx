@@ -6,6 +6,7 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Layout from "./Layout";
 import NotFoundPage from "./pages/404Page";
+import Workandachievements from "./pages/Workandachievements";
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
             <Route index element={<Home />} />
             <Route path="photos" element={<About />} />
             <Route path="contact" element={<Contact />} />
+            <Route path="workandachievements" element={<Workandachievements />} />
             <Route path="*" element={<NotFoundPage />} />
           </Route>
         </Routes>

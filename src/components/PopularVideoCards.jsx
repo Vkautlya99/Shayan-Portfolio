@@ -1,6 +1,18 @@
 import React from "react";
+import YouTube from "react-youtube";
 
-const PopularVideoCards = ({ videoUrl, title }) => {
+const PopularVideoCards = ({ videoId, title }) => {
+  const opts = {
+    height: "400",
+    width: "100%",
+    playerVars: {
+      autoplay: 0, // Set to 1 for auto-play
+      controls: 1,
+      modestbranding: 1,
+      rel: 0,
+    },
+  };
+
   return (
     <div className="w-full max-w-[90vw] md:max-w-[60vw] mx-auto bg-gradient-to-b from-white to-gray-100 shadow-lg rounded-xl p-6 my-6">
       {/* Video Title */}
@@ -8,16 +20,9 @@ const PopularVideoCards = ({ videoUrl, title }) => {
         {title}
       </h2>
 
-      {/* Embedded YouTube Video */}
+      {/* YouTube Video */}
       <div className="w-full flex justify-center">
-        <iframe
-          className="w-full h-[250px] md:h-[350px] lg:h-[400px] rounded-lg shadow-md"
-          src={videoUrl}
-          title={title}
-          frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
-        ></iframe>
+        <YouTube className="w-full rounded-lg shadow-md" videoId={videoId} opts={opts} />
       </div>
     </div>
   );
