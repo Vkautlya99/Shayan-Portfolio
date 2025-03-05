@@ -15,7 +15,7 @@ const Header = () => {
       data-aos="fade-down"
     >
       {/* Logo/Image */}
-      <div
+      <Link to="/"
         className="flex items-center gap-2 text-gray-700 text-lg font-bold font-mono"
         data-aos="fade-right"
         data-aos-duration="1200"
@@ -28,7 +28,7 @@ const Header = () => {
           data-aos-duration="1500"
         />
         Shayan Krishna
-      </div>
+      </Link>
 
       {/* Navigation Links */}
       <div className="flex items-center gap-3 lg:gap-16 px-2 text-md">
