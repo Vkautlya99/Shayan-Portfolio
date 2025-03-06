@@ -160,7 +160,7 @@ const Contact = () => {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full p-4 text-white font-medium rounded-lg bg-gradient-to-r from-teal-500 to-teal-700 hover:from-teal-600 hover:to-teal-800 transform hover:scale-[1.02] transition-all duration-300 shadow-md flex justify-center items-center"
+                  className="w-full p-4 text-white font-medium rounded-lg bg-gradient-to-r from-teal-300 to-teal-700 hover:from-teal-600 hover:to-teal-800 transform hover:scale-[1.02] transition-all duration-300 shadow-md flex justify-center items-center"
                 >
                   {isSubmitting ? (
                     <span className="inline-flex items-center">
