@@ -12,7 +12,7 @@ function TnC() {
       
       
       <div className="space-y-6 text-gray-600">
-        <h1 className='text-lg text-gray-700'>This Web application is developed by <strong className='text-yellow-400'>Vikram Kumar </strong> and he do have the all authorities of this web app. on behaldf of Mr. Shayan Krishna</h1>
+        <h1 className='text-lg text-gray-700'>This Web application is developed by <strong className='text-yellow-400'>Vikram Kumar </strong> and he do have the all authorities of this web app. on behalf of Mr. Shayan Krishna</h1>
         <section>
           <h2 className="text-xl font-semibold text-gray-800 mb-3">1. Introduction</h2>
           <p>
