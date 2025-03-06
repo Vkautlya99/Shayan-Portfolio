@@ -15,6 +15,12 @@
   "dependencies": {
     "concurrently": "^9.1.2",
     "cors": "^2.8.5",
-    "express": "^4.21.2"
+    "dotenv": "^16.4.7",
+    "emailjs": "^4.0.3",
+    "emailjs-com": "^3.2.0",
+    "express": "^4.21.2",
+    "express-validator": "^7.2.1",
+    "nodemailer": "^6.10.0",
+    "xhr2": "^0.2.1"
   }
 }
