@@ -3,9 +3,16 @@ import React from 'react';
 function TnC() {
   return (
     <div className="max-w-4xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
-      <h1 className="text-3xl font-bold text-gray-900 mb-6 text-center">Terms and Conditions</h1>
+    <div className='flex items-center justify-center'>
+
+      <h1 className="text-3xl font-bold text-gray-900 mb-8 ">Terms and Conditions </h1>
+      <span className='text-[12px] font-bold bg-gradient-to-r from-teal-400 to-teal-700 text-white p-2 rounded-2xl -mt-12 '>* VnY Corporation </span>
+    </div>
+      
+      
       
       <div className="space-y-6 text-gray-600">
+        <h1 className='text-lg text-gray-700'>This Web application is developed by <strong className='text-yellow-400'>Vikram Kumar </strong> and he do have the all authorities of this web app. on behaldf of Mr. Shayan Krishna</h1>
         <section>
           <h2 className="text-xl font-semibold text-gray-800 mb-3">1. Introduction</h2>
           <p>
@@ -69,9 +76,10 @@ function TnC() {
           </p>
         </section>
         
-        <div className="mt-8 pt-6 border-t border-gray-200">
-          <p className="text-sm text-gray-500">
+        <div className=" mt-8 pt-6 border-t border-gray-200">
+          <p className=" flex text-sm text-gray-500 gap-2">
             Last updated: {new Date().toLocaleDateString('en-US', {year: 'numeric', month: 'long', day: 'numeric'})}
+            <p className='bg-gradient-to-r from-teal-400 to-teal-700 text-white p-1 rounded-2xl font-bold -mt-1 text-[12px] '>*VnY Corporation</p>
           </p>
         </div>
       </div>

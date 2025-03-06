@@ -1,11 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
+import founderimage from "../assets/images/founderimageVnY.jpg"
 const Footer = () => {
   const currentYear = new Date().getFullYear();
   
   return (
-    <footer className="bg-gradient-to-r from-teal-400 to-teal-700 text-white py-8 text-center relative overflow-hidden">
+    <footer className="select-none bg-gradient-to-r from-teal-400 to-teal-700 text-white py-8 text-center relative overflow-hidden">
       {/* Animated Glow Effect */}
       <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent opacity-10 blur-2xl animate-pulse -z-20"></div>
       
@@ -27,20 +27,26 @@ const Footer = () => {
           </svg>
         </a>
       </div>
+     
+     <div className="">
 
-      <h2 className="text-xl font-semibold">
-        &copy; {currentYear} Vikram Kumar
+      <h2 className="text-xl items-center justify-center font-semibold flex">
+        &copy; {currentYear} VnY Corporation
+        <img src={founderimage} alt="" className=" w-16 h-10 rounded-bl-full hover:scale-110 transition-all duration-500 " />
+
       </h2>
+     </div>
+      <span className="text-sm font-bold hover:text-yellow-400 select-none">All Rights Reserved</span>
       
       <p className="mt-2 text-sm max-w-md mx-auto">
         Contact For Your{" "}
-        <span className="font-bold transition-all duration-300 text-yellow-300 hover:text-white hover:underline cursor-pointer">
+        <a href="https://www.instagram.com/thisisvrk?igsh=cm9heTVkYm9mZWx3"><span className="font-bold transition-all duration-300 text-yellow-300 hover:text-white hover:underline cursor-pointer">
           Business Needs
-        </span>
+        </span></a>
       </p>
 
       {/* Navigation Links */}
-      <div className="mt-4 flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm">
+      <div className="mt-4 flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm font-bold">
         <Link to= '/' className="hover:text-yellow-300 transition-colors duration-300">Home</Link>
         <Link to="/photos" className="hover:text-yellow-300 transition-colors duration-300">Photo</Link>
         <Link to="/workandachievements" className="hover:text-yellow-300 transition-colors duration-300">Work & achievement</Link>
@@ -52,7 +58,7 @@ const Footer = () => {
       <div className="w-1/3 mx-auto mt-4 h-[2px] bg-white/50 hover:w-2/3 hover:bg-yellow-300/70 transition-all duration-500"></div>
       
       {/* Contact Button */}
-      <button className="mt-4 px-6 py-2 bg-yellow-400 text-teal-800 font-bold rounded-full hover:bg-white hover:scale-105 transition-all duration-300 shadow-lg">
+      <button className="mt-4 px-6 py-2 bg-yellow-400 text-white font-bold rounded-full hover:bg-white hover:scale-105 hover:text-teal-700 transition-all duration-300 shadow-lg">
         Get in Touch
       </button>
     </footer>

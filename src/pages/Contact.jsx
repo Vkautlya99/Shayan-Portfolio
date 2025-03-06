@@ -87,18 +87,18 @@ const Contact = () => {
       <div className="w-full max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           {/* Contact Form Column */}
-          <div className="flex flex-col">
-            <div className="mb-8">
-              <h1 className="text-3xl font-bold text-gray-900  mb-4">
+          <div data-aos="flip" className="flex flex-col">
+            <div  className="f mb-8">
+              <h1 data-aos="fade-right" className="text-3xl font-bold text-gray-900  mb-4">
                 Let's Work Together
               </h1>
-              <p className="text-gray-600">
+              <p data-aos="fade-left" className="text-gray-600">
                 Looking for a collaboration? Have a project in mind? Fill out the form below
                 and I'll get back to you as soon as possible.
               </p>
             </div>
 
-            <form
+            <form data-aos="zoom-in-right"
               onSubmit={handleSubmit}
               className="bg-white dark:bg-gray-800 shadow-xl rounded-xl p-8 flex-grow"
             >
@@ -184,8 +184,10 @@ const Contact = () => {
 
           {/* Contact Information Column */}
           <div className="flex flex-col justify-center">
-            <div className="bg-gradient-to-r from-teal-300 to-teal-700 rounded-xl shadow-xl p-8 text-white">
-              <h2 className="text-2xl font-bold mb-6">Contact Information</h2>
+            <div data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000" className=" lg:mt-46 bg-gradient-to-r from-teal-300 to-teal-700 rounded-xl shadow-xl p-8 text-white">
+              <h2 data-aos="fade-down" className="text-2xl font-bold mb-6">Contact Information</h2>
 
               <div className="space-y-6">
                 <div className="flex items-start space-x-4">
@@ -194,41 +196,50 @@ const Contact = () => {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                     </svg>
                   </div>
-                  <div>
+                  <div data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1500">
                     <h3 className="font-medium">Email</h3>
                     <p className="mt-1">contact@shayankrishna.com</p>
                   </div>
                 </div>
 
-                <div className="flex items-start space-x-4">
+                <div data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1500" className="flex items-start space-x-4">
                   <div className="flex-shrink-0 mt-1">
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                     </svg>
                   </div>
-                  <div>
+                  <div data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1500">
                     <h3 className="font-medium">Location</h3>
                     <p className="mt-1">Los Angeles, California</p>
                   </div>
                 </div>
 
-                <div className="flex items-start space-x-4">
+                <div data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1500" className="flex items-start space-x-4">
                   <div className="flex-shrink-0 mt-1">
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>
                   </div>
                   <div>
-                    <h3 className="font-medium">Response Time</h3>
+                    <h3  className="font-medium">Response Time</h3>
                     <p className="mt-1">Usually within 48 hours</p>
                   </div>
                 </div>
               </div>
 
               <div className="mt-12">
-                <h3 className="font-medium mb-4">Connect with me</h3>
-                <div className="flex items-center space-x-4">
+                <h3 data-aos="fade-up"
+     data-aos-duration="3000" className="font-medium mb-4">Connect with me</h3>
+                <div data-aos="fade-down" className="flex items-center space-x-4">
                   <a href="https://www.facebook.com/profile.php?id=100082734665720#" className="p-2 bg-opacity-20 rounded-full hover:bg-opacity-30 transition-all">
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
                       <path d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z" />
