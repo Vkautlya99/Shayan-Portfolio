@@ -44,9 +44,9 @@ const Intro = () => {
       >
         Shayan Krishna
       </h1>
-      <div
+      <div data-aos = "flip-right"
   className="lg:w-[35vw] mx-auto flex flex-wrap sm:flex-col sm:items-center justify-center gap-6 p-6 border-gray-300 shadow-xl rounded-2xl bg-white"
-  data-aos="zoom-in"
+  
 >
   {[
     "Hollywood Actor",
@@ -65,7 +65,7 @@ const Intro = () => {
 
       <div
         className="mt-8 flex flex-wrap justify-center gap-10 bg-black p-4 rounded-lg shadow-lg"
-        data-aos="fade-up"
+        data-aos="flip-left"
       >
         {[
           {
