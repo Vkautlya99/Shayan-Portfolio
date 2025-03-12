@@ -45,23 +45,24 @@ const Intro = () => {
         Shayan Krishna
       </h1>
       <div
-        className="lg:w-[35vw] mx-auto flex flex-wrap sm:flex-col sm:items-center justify-center gap-6 p-6 border-gray-300 shadow-xl rounded-2xl bg-white"
-        data-aos="zoom-in"
-      >
-        {[
-          "Hollywood Actor",
-          "Published Model",
-          "Television Panelist",
-          "Social Media Influencer",
-        ].map((title, index) => (
-          <h3
-            key={index}
-            className="text-xl lg:text-5xl font-semibold text-yellow-500 font-mono hover:scale-110 transition-transform duration-300 ease-in-out cursor-pointer hover:text-yellow-400"
-          >
-            {title}
-          </h3>
-        ))}
-      </div>
+  className="lg:w-[35vw] mx-auto flex flex-wrap sm:flex-col sm:items-center justify-center gap-6 p-6 border-gray-300 shadow-xl rounded-2xl bg-white"
+  data-aos="zoom-in"
+>
+  {[
+    "Hollywood Actor",
+    "Published Model",
+    "Television Panelist",
+    "Social Media Influencer",
+  ].map((title, index) => (
+    <h3
+      key={index}
+      className="text-xl lg:text-5xl font-semibold text-yellow-500 font-mono hover:scale-110 transition-transform duration-300 ease-in-out cursor-pointer hover:text-yellow-400 whitespace-nowrap text-center"
+    >
+      {title}
+    </h3>
+  ))}
+</div>
+
       <div
         className="mt-8 flex flex-wrap justify-center gap-10 bg-black p-4 rounded-lg shadow-lg"
         data-aos="fade-up"
