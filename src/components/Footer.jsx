@@ -58,9 +58,9 @@ const Footer = () => {
       <div className="w-1/3 mx-auto mt-4 h-[2px] bg-white/50 hover:w-2/3 hover:bg-yellow-300/70 transition-all duration-500"></div>
       
       {/* Contact Button */}
-      <button className="mt-4 px-6 py-2 bg-yellow-400 text-white font-bold rounded-full hover:bg-white hover:scale-105 hover:text-teal-700 transition-all duration-300 shadow-lg">
+      <Link to=""><button className="mt-4 px-6 py-2 bg-yellow-400 text-white font-bold rounded-full hover:bg-white hover:scale-105 hover:text-teal-700 transition-all duration-300 shadow-lg">
         Get in Touch
-      </button>
+      </button></Link>
     </footer>
   );
 };

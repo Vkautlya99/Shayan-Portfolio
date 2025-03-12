@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
-import { motion } from "framer-motion";
 import "aos/dist/aos.css";
 
 import AboutCard from "../components/AboutCard";
@@ -63,61 +62,49 @@ const About = () => {
       </Helmet>
 
       {/* Head Shots Section with Animation */}
-      <motion.div 
-        className="flex items-center justify-center gap-2"
-        initial={{ opacity: 0, y: -50 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1 }}
-        viewport={{ once: false }}
+      <div 
+        className="flex items-center justify-center gap-2" 
+        data-aos="fade-down"
       >
         <h1 className="text-center text-5xl font-bold hover:font-gray-800 my-8 mb-8">
           Head Shots
         </h1>
         <img src={headshotGif} alt="" className="text-xl" />
-      </motion.div>
+      </div>
 
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3 p-4">
         {HeadShotimages.map((image, index) => (
-          <motion.div 
+          <div 
             key={index}
             className="lg:w-[20vw] aspect-square mb-8"
-            data-aos="fade-up"
-            data-aos-delay={index * 150}
-            whileHover={{ scale: 1.05 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            initial={{ opacity: 0, y: 50 }}
-            transition={{ duration: 0.5 }}
-            viewport={{ once: false }}
+            data-aos="fade-up" data-aos-delay={index * 150}
           >
             <AboutCard imageUrl={image} altText={`Image ${index + 1}`} />
-          </motion.div>
+          </div>
         ))}
       </div>
 
       {/* Bio Section */}
-      <motion.div 
-        className="flex items-center justify-center gap-4"
-        initial={{ opacity: 0, y: -50 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1 }}
-        viewport={{ once: false }}
+      <div 
+        className="flex items-center justify-center gap-4" 
+        data-aos="fade-down"
       >
-        <h2 className="text-4xl font-extrabold mb-4 text-center">Biodata</h2>
+        <h2 className="text-4xl font-extrabold mb-4 text-center">__Bio__</h2>
         <img 
           data-aos="flip-left" 
           src={about12image} 
           alt="" 
           className="w-15 h-15 rounded-full"
         />
-      </motion.div>
+      </div>
 
-      <motion.div 
+      <div 
         data-aos="zoom-in"
         className="max-w-4xl mx-auto mt-10 p-6 rounded-2xl shadow-lg bg-gradient-to-r from-teal-300 to-teal-700 text-white text-lg mb-5 "
       >
         <ul className="space-y-2 text-center">
           <li><strong>Sex:</strong> Male</li>
-          <li><strong>Height:</strong> 6’1</li>
+          <li><strong>Height:</strong> 6'1</li>
           <li><strong>Hair Color:</strong> Blonde</li>
           <li><strong>Eye Color:</strong> Brown</li>
           <li><strong>Weight:</strong> 143 lbs</li>
@@ -125,33 +112,26 @@ const About = () => {
           <li><strong>Shoe Size:</strong> 11</li>
           <li><strong>Languages:</strong> English, Urdu, Hindi, Spanish, Punjabi, Sindhi</li>
         </ul>
-      </motion.div>
+      </div>
 
       {/* More Images Section with Animation */}
-      <motion.div 
-        className="flex items-center justify-center gap-4"
-        initial={{ opacity: 0, y: -50 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1 }}
-        viewport={{ once: false }}
+      <div 
+        className="flex items-center justify-center gap-4" 
+        data-aos="fade-down"
       >
         <h1 className="text-center text-5xl font-bold my-8">More Images</h1>
         <img src={moreImages} alt="" className="w-10 h-10 lg:w-15 lg:h-15 rounded-full mt-4" />
-      </motion.div>
+      </div>
 
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3 p-4">
         {MoreImages.map((image, index) => (
-          <motion.div 
+          <div 
             key={index}
             className="lg:w-[20vw] aspect-square"
-            whileHover={{ scale: 1.05 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            initial={{ opacity: 0, y: 50 }}
-            transition={{ duration: 0.5, delay: index * 0.1 }}
-            viewport={{ once: false }}
+            data-aos="fade-up" data-aos-delay={index * 100}
           >
             <AboutCard imageUrl={image} altText={`More Image ${index + 1}`} />
-          </motion.div>
+          </div>
         ))}
       </div>
     </>
