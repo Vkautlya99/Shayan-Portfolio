@@ -171,26 +171,22 @@ const Intro = () => {
           <strong>Bollywood Debut: THE UNKNOWN MIND (Coming Soon)</strong>
         </li>
       </ul>
-      <div className="w-full max-w-[90vw] lg:max-w-[60vw] mx-auto overflow-x-hidden border-gray-200 shadow-lg rounded-xl p-6 bg-gradient-to-b from-white to-gray-100">
+      <div className="w-full max-w-[90vw] lg:max-w-[60vw] mx-auto overflow-x-hidden border-gray-200 rounded-xl  bg-gradient-to-b from-white to-gray-100">
       {/* Acting Images Section */}
-      <h2
-        className="text-4xl font-bold text-gray-800 text-center"
-        data-aos="fade-left"
-      >
-      </h2>
+      
       <ActingPictures images={images} />
     </div>
 
       {/* Acting Images Section */}
       <div
-        className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3 p-4 items-center justify-center"
+        className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3 items-center justify-center"
         data-aos="fade-up"
       >
         <ActingPictures />
       </div>
       {/* Interviews Section */}
       <h2
-        className="text-4xl font-bold text-gray-800 my-6 text-center"
+        className="text-4xl font-bold text-gray-800 mb-4 text-center"
         data-aos="fade-left"
       >
         Interviews & Media Presence
