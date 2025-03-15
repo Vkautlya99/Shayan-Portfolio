@@ -22,7 +22,7 @@ import image10 from "../assets/ActingImages/actingpic10.png";
 
 // News and Media Images 
 import newsImage1 from "../assets/NewsandMediaImages/i1.jpg";
-import newsImage2 from "../assets/NewsandMediaImages/i2.jpg";
+// import newsImage2 from "../assets/NewsandMediaImages/i2.jpg";
 import newsImage3 from "../assets/NewsandMediaImages/i3.jpg";
 import newsImage4 from "../assets/NewsandMediaImages/i4.jpg";
 import newsImage5 from "../assets/NewsandMediaImages/i5.jpg";
@@ -50,7 +50,7 @@ const images = [
 // Create an array for news images
 const newsImages = [
   newsImage1,
-  newsImage2,
+  // newsImage2,
   newsImage3,
   newsImage4,
   newsImage5,

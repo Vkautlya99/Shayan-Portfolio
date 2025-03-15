@@ -29,8 +29,8 @@ const NewsAndMediaCard = ({ images }) => {
         ))}
       </div>
       
-      {/* Optional: Add navigation dots
-      <div className="flex justify-center gap-2 -mt-14 md:-mt-30 lg:-mt-36">
+      {/* Optional: Add navigation dots */}
+      {/* <div className="flex justify-center gap-2 -mt-14 md:-mt-30 lg:-mt-48">
         {images.map((_, index) => (
           <button
             key={index}
