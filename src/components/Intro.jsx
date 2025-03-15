@@ -75,14 +75,17 @@ const Intro = () => {
   return (
     <div className="w-full max-w-[90vw] lg:max-w-[60vw] mx-auto overflow-x-hidden my-10 border-gray-200 shadow-lg rounded-xl p-6 bg-gradient-to-b from-white to-gray-100">
       <h1
-        className="text-center uppercase text-5xl lg:text-6xl text-gray-800 font-extrabold font-mono mb-8 tracking-wide drop-shadow-lg"
+        className="text-center uppercase text-5xl lg:text-6xl text-gray-800 font-extrabold font-mono tracking-wide drop-shadow-lg"
         data-aos="fade-down"
       >
         Shayan Krishna
       </h1>
+      <div className="px-30 md:px-48 lg:px-[37vw]">
+      <a href="https://youtube.com/@shayankrishna?si=H6XARzmAX_A8rJC0" className=" text-yellow-400 text-md font-medium hover:underline cursor-pointer ">@theblondedesi</a>
+      </div>
       <div
         data-aos="flip-right"
-        className="lg:w-[35vw] mx-auto flex flex-wrap sm:flex-col sm:items-center justify-center gap-6 p-6 border-gray-300 shadow-xl rounded-2xl bg-white"
+        className="lg:w-[35vw] mt-10 mx-auto flex flex-wrap sm:flex-col sm:items-center justify-center gap-6 p-6 border-gray-300 shadow-xl rounded-2xl bg-white"
       >
         {[
           "Hollywood Actor",
