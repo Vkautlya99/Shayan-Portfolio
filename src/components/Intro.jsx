@@ -80,7 +80,7 @@ const Intro = () => {
       >
         Shayan Krishna
       </h1>
-      <div className="px-30 md:px-48 lg:px-[37vw]">
+      <div className="px-30 md:px-48 lg:px-[37vw] hover:scale-110 transition-transform duration-300 ease-in-out cursor-pointer hover:text-yellow-400 whitespace-nowrap">
       <a href="https://youtube.com/@shayankrishna?si=H6XARzmAX_A8rJC0" className=" text-yellow-400 text-md font-medium hover:underline cursor-pointer ">@theblondedesi</a>
       </div>
       <div
