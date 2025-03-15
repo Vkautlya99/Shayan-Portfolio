@@ -29,7 +29,7 @@ const NewsAndMediaCard = ({ images }) => {
         ))}
       </div>
       
-      {/* Optional: Add navigation dots */}
+      {/* Optional: Add navigation dots
       <div className="flex justify-center gap-2 -mt-14 md:-mt-30 lg:-mt-36">
         {images.map((_, index) => (
           <button
@@ -41,7 +41,7 @@ const NewsAndMediaCard = ({ images }) => {
             aria-label={`Go to slide ${index + 1}`}
           />
         ))}
-      </div>
+      </div> */}
     </div>
   );
 };

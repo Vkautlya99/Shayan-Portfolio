@@ -112,7 +112,7 @@ const About = () => {
           <li><strong>Shoe Size:</strong> 11</li>
           <li><strong>Languages:</strong> English, Urdu, Hindi, Spanish, Punjabi, Sindhi</li>
         </ul>
-        <img data-aos="zoom-out-down" src={about1image} alt="" className="rounded-4xl hidden md:block" />
+        <img data-aos="zoom-out-down" src={about1image} alt="" className="rounded-8xl hidden md:block mb-10" />
       </div>
 
       {/* More Images Section with Animation */}
