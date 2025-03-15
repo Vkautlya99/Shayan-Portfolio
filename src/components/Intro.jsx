@@ -25,7 +25,7 @@ import newsImage1 from "../assets/NewsandMediaImages/i1.jpg";
 // import newsImage2 from "../assets/NewsandMediaImages/i2.jpg";
 import newsImage3 from "../assets/NewsandMediaImages/i3.jpg";
 import newsImage4 from "../assets/NewsandMediaImages/i4.jpg";
-import newsImage5 from "../assets/NewsandMediaImages/i5.jpg";
+// import newsImage5 from "../assets/NewsandMediaImages/i5.jpg";
 import newsImage6 from "../assets/NewsandMediaImages/i6.jpg";
 import newsImage7 from "../assets/NewsandMediaImages/i7.jpg";
 
@@ -53,7 +53,7 @@ const newsImages = [
   // newsImage2,
   newsImage3,
   newsImage4,
-  newsImage5,
+  // newsImage5,
   newsImage6,
   newsImage7,
   
