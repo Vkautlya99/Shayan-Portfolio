@@ -19,11 +19,53 @@ import image8 from "../assets/ActingImages/actingpic8.png";
 import image9 from "../assets/ActingImages/actingpic9.png";
 import image10 from "../assets/ActingImages/actingpic10.png";
 
+
+// News and Media Images 
+import newsImage1 from "../assets/NewsandMediaImages/i1.jpg";
+import newsImage2 from "../assets/NewsandMediaImages/i2.jpg";
+import newsImage3 from "../assets/NewsandMediaImages/i3.jpg";
+import newsImage4 from "../assets/NewsandMediaImages/i4.jpg";
+import newsImage5 from "../assets/NewsandMediaImages/i5.jpg";
+import newsImage6 from "../assets/NewsandMediaImages/i6.jpg";
+import newsImage7 from "../assets/NewsandMediaImages/i7.jpg";
+import newsImage8 from "../assets/NewsandMediaImages/i8.jpg";
+import newsImage9 from "../assets/NewsandMediaImages/i9.jpg";
+import newsImage10 from "../assets/NewsandMediaImages/i10.jpg";
+import newsImage11 from "../assets/NewsandMediaImages/i11.jpg";
+
 import ActingPictures from "./ActingPictures";
+import NewsAndMediaCard from "./NewsAndMediaCard";
 
 const images = [
-  image1, image2, image3, image4, image5, image6, image7, image8, image9, image10
+  image1,
+  image2,
+  image3,
+  image4,
+  image5,
+  image6,
+  image7,
+  image8,
+  image9,
+  image10,
 ];
+
+// News and media items 
+// Create an array for news images
+const newsImages = [
+  newsImage1,
+  newsImage2,
+  newsImage3,
+  newsImage4,
+  newsImage5,
+  newsImage6,
+  newsImage7,
+  newsImage8,
+  newsImage9,
+  newsImage10,
+  newsImage11,
+];
+
+
 const Intro = () => {
   const videos = [
     { videoId: "uVjAGH-Nodc" },
@@ -44,24 +86,24 @@ const Intro = () => {
       >
         Shayan Krishna
       </h1>
-      <div data-aos = "flip-right"
-  className="lg:w-[35vw] mx-auto flex flex-wrap sm:flex-col sm:items-center justify-center gap-6 p-6 border-gray-300 shadow-xl rounded-2xl bg-white"
-  
->
-  {[
-    "Hollywood Actor",
-    "Published Model",
-    "Television Panelist",
-    "Social Media Influencer",
-  ].map((title, index) => (
-    <h3
-      key={index}
-      className="text-xl lg:text-5xl font-semibold text-yellow-500 font-mono hover:scale-110 transition-transform duration-300 ease-in-out cursor-pointer hover:text-yellow-400 whitespace-nowrap text-center"
-    >
-      {title}
-    </h3>
-  ))}
-</div>
+      <div
+        data-aos="flip-right"
+        className="lg:w-[35vw] mx-auto flex flex-wrap sm:flex-col sm:items-center justify-center gap-6 p-6 border-gray-300 shadow-xl rounded-2xl bg-white"
+      >
+        {[
+          "Hollywood Actor",
+          "Published Model",
+          "Television Panelist",
+          "Social Media Influencer",
+        ].map((title, index) => (
+          <h3
+            key={index}
+            className="text-xl lg:text-5xl font-semibold text-yellow-500 font-mono hover:scale-110 transition-transform duration-300 ease-in-out cursor-pointer hover:text-yellow-400 whitespace-nowrap text-center"
+          >
+            {title}
+          </h3>
+        ))}
+      </div>
 
       <div
         className="mt-8 flex flex-wrap justify-center gap-10 bg-black p-4 rounded-lg shadow-lg"
@@ -147,7 +189,7 @@ const Intro = () => {
         stage has made him a recognized name in the fashion industry.
       </p>
       {/* Acting Section */}
-      
+
       <h2
         className="text-4xl font-bold text-gray-800 my-10 text-center"
         data-aos="fade-left"
@@ -173,10 +215,10 @@ const Intro = () => {
         </li>
       </ul>
       <div className="w-full max-w-[90vw] lg:max-w-[60vw] mx-auto overflow-x-hidden border-gray-200 rounded-xl  bg-gradient-to-b from-white to-gray-100">
-      {/* Acting Images Section */}
-      
-      <ActingPictures images={images} />
-    </div>
+        {/* Acting Images Section */}
+
+        <ActingPictures images={images} />
+      </div>
 
       {/* Acting Images Section */}
       <div
@@ -185,7 +227,8 @@ const Intro = () => {
       >
         <ActingPictures />
       </div>
-      {/* Interviews Section */}
+
+      {/* News and Media  */}
       <h2
         className="text-4xl font-bold text-gray-800 mb-4 text-center"
         data-aos="fade-left"
@@ -200,8 +243,12 @@ const Intro = () => {
         Hindustan Times, CNN, Republic, and AsiaNet, where he spoke about his
         journey in the entertainment industry and his mission to represent South
         Asian culture. He also promotes unity with his activism and humanitarian
-        work
+        work.
       </p>
+      
+      {/* Pass the newsImages array as a prop to NewsAndMediaCard */}
+      <NewsAndMediaCard images={newsImages} />
+
       <h1 className="text-3xl md:text-4xl font-bold text-gray-800 my-10 text-center">
         Most Popular Videos
       </h1>

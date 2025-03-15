@@ -35,7 +35,7 @@ const Footer = () => {
               <img 
                 src={founderImage} 
                 alt="VnY Logo" 
-                className="w-12 h-10 ml-2 rounded-bl-full hover:scale-110 transition-all duration-500" 
+                className="w-12 h-10 ml-2 rounded-full hover:scale-110 transition-all duration-500" 
               />
             </div>
             <p className="text-sm text-gray-200 mb-4">
