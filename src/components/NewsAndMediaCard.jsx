@@ -13,7 +13,7 @@ const NewsAndMediaCard = ({ images }) => {
   }, [images.length]);
 
   return (
-    <div className="carousel w-full max-w-4xl mx-auto overflow-hidden my-8" data-aos="fade-up">
+    <div className="carousel w-full max-w-4xl  mx-auto overflow-hidden " data-aos="fade-up">
       <div 
         className="flex transition-transform duration-500 ease-in-out"
         style={{ transform: `translateX(-${currentIndex * 100}%)` }}
@@ -30,7 +30,7 @@ const NewsAndMediaCard = ({ images }) => {
       </div>
       
       {/* Optional: Add navigation dots */}
-      <div className="flex justify-center mt-4 gap-2">
+      <div className="flex justify-center gap-2 -mt-14 md:-mt-30 lg:-mt-36">
         {images.map((_, index) => (
           <button
             key={index}

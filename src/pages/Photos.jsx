@@ -100,7 +100,7 @@ const About = () => {
 
       <div 
         data-aos="zoom-in"
-        className="max-w-4xl mx-auto mt-10 p-6 rounded-2xl shadow-lg bg-gradient-to-r from-teal-300 to-teal-700 text-white text-lg mb-5 "
+        className="flex justify-between max-w-4xl mx-auto mt-10 p-6 rounded-2xl shadow-lg bg-gradient-to-r from-teal-300 to-teal-700 text-white text-lg mb-5 "
       >
         <ul className="space-y-2 text-center">
           <li><strong>Sex:</strong> Male</li>
@@ -112,6 +112,7 @@ const About = () => {
           <li><strong>Shoe Size:</strong> 11</li>
           <li><strong>Languages:</strong> English, Urdu, Hindi, Spanish, Punjabi, Sindhi</li>
         </ul>
+        <img data-aos="zoom-out-down" src={about1image} alt="" className="rounded-4xl hidden md:block" />
       </div>
 
       {/* More Images Section with Animation */}

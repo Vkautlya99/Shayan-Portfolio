@@ -5,6 +5,7 @@ import { FaFacebookF, FaInstagram, FaEnvelope, FaPhone } from 'react-icons/fa';
 import { FaXTwitter } from 'react-icons/fa6';
 import 'aos/dist/aos.css';
 import AOS from 'aos';
+import { IoMailOpen } from "react-icons/io5";
 
 const Footer = () => {
   useEffect(() => {
@@ -32,10 +33,10 @@ const Footer = () => {
           <div data-aos="fade-right" className="text-left">
             <div className="flex items-center mb-4">
               <h3 className="text-xl font-bold">VnY Corporation</h3>
-              <img 
+              <img
                 src={founderImage} 
                 alt="VnY Logo" 
-                className="w-12 h-10 ml-2 rounded-full hover:scale-110 transition-all duration-500" 
+                className="w-12 h-12 ml-2 rounded-full hover:scale-110 transition-all duration-500" 
               />
             </div>
             <p className="text-sm text-gray-200 mb-4">
@@ -54,6 +55,10 @@ const Footer = () => {
                  className="w-8 h-8 rounded-full bg-teal-700 flex items-center justify-center hover:bg-yellow-400 transition-colors duration-300">
                 <FaInstagram className="w-4 h-4" />
               </a>
+
+              <a href="mailto:vikramkautlya2020@gmail.com" className="w-8 h-8 rounded-full bg-teal-700 flex items-center justify-center hover:bg-yellow-400 transition-colors duration-300">
+                <IoMailOpen className="w-4 h-4"/>
+                 </a>
             </div>
           </div>
           

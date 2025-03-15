@@ -234,13 +234,13 @@ const Intro = () => {
 
       {/* News and Media  */}
       <h2
-        className="text-4xl font-bold text-gray-800 mb-4 text-center"
+        className="text-4xl font-bold text-gray-800 mb-3 text-center"
         data-aos="fade-left"
       >
         Interviews & Media Presence
       </h2>
       <p
-        className="text-lg text-gray-700 text-center px-6"
+        className="text-lg text-gray-700 text-center px-6 mb-4"
         data-aos="fade-right"
       >
         Shayan Krishna has been interviewed by major media houses, including
@@ -253,7 +253,7 @@ const Intro = () => {
       {/* Pass the newsImages array as a prop to NewsAndMediaCard */}
       <NewsAndMediaCard images={newsImages} />
 
-      <h1 className="text-3xl md:text-4xl font-bold text-gray-800 my-10 text-center">
+      <h1 className="text-3xl md:text-4xl font-bold text-gray-800 text-center mt-4">
         Most Popular Videos
       </h1>
       {videos.map((video, index) => (
