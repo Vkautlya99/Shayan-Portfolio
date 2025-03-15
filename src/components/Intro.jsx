@@ -32,6 +32,8 @@ import newsImage8 from "../assets/NewsandMediaImages/i8.jpg";
 import newsImage9 from "../assets/NewsandMediaImages/i9.jpg";
 import newsImage10 from "../assets/NewsandMediaImages/i10.jpg";
 import newsImage11 from "../assets/NewsandMediaImages/i11.jpg";
+import newsImage12 from "../assets/NewsandMediaImages/i12.jpg";
+import newsImage14 from "../assets/NewsandMediaImages/i14.jpg";
 
 import ActingPictures from "./ActingPictures";
 import NewsAndMediaCard from "./NewsAndMediaCard";
@@ -63,6 +65,8 @@ const newsImages = [
   newsImage9,
   newsImage10,
   newsImage11,
+  newsImage12,
+  newsImage14,
 ];
 
 
