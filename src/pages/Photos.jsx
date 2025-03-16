@@ -77,11 +77,11 @@ const About = () => {
         <img src={headshotGif} alt="" className="text-xl" />
       </div>
 
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3 p-4">
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3 p-4 ">
         {HeadShotimages.map((image, index) => (
           <div 
             key={index}
-            className="lg:w-[20vw] aspect-square mb-8"
+            className="lg:w-[20vw] aspect-square mb-8 "
             data-aos="fade-up" data-aos-delay={index * 150}
           >
             <AboutCard imageUrl={image} altText={`Image ${index + 1}`} />
