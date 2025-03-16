@@ -1,10 +1,10 @@
 const AboutCard = ({ imageUrl, altText }) => {
   return (
-    <div className="w-full h-full overflow-hidden rounded-lg aspect-square">
+    <div className="w-full h-full overflow-hidden aspect-square">
       <img 
         src={imageUrl} 
         alt={altText} 
-        className="w-full object-cover rounded-lg"
+        className="w-full h-full object-contain"
       />
     </div>
   );
