@@ -19,6 +19,30 @@ import image8 from "../assets/ActingImages/actingpic8.png";
 import image9 from "../assets/ActingImages/actingpic9.png";
 import image10 from "../assets/ActingImages/actingpic10.png";
 
+// Modelling Pictures 
+import m1 from "../assets/ModellingPictures/moddeling1.jpg"
+import m2 from "../assets/ModellingPictures/modelling2.jpg"
+import m3 from "../assets/ModellingPictures/modelling3.jpg"
+import m4 from "../assets/ModellingPictures/modelling4.jpg"
+import m5 from "../assets/ModellingPictures/modelling5.jpg"
+import m6 from "../assets/ModellingPictures/modeeling6.jpg"
+import m7 from "../assets/ModellingPictures/modelling7.jpg"
+import m8 from "../assets/ModellingPictures/modelling8.jpg"
+import m9 from "../assets/ModellingPictures/modelling9.jpg"
+import m10 from "../assets/ModellingPictures/modelling10.jpg"
+import m11 from "../assets/ModellingPictures/modelling11.jpg"
+import m12 from "../assets/ModellingPictures/modelling12.jpg"
+import m13 from "../assets/ModellingPictures/modelling13.jpg"
+import m14 from "../assets/ModellingPictures/modelling14.jpg"
+import m15 from "../assets/ModellingPictures/modelling15.jpg"
+import m16 from "../assets/ModellingPictures/modelling16.jpg"
+import m17 from "../assets/ModellingPictures/modelling17.jpg"
+import m18 from "../assets/ModellingPictures/modelling18.jpg"
+import m19 from "../assets/ModellingPictures/modelling19.jpg"
+import m20 from "../assets/ModellingPictures/modelling20.jpg"
+import m21 from "../assets/ModellingPictures/modelling21.jpg"
+import m22 from "../assets/ModellingPictures/modelling22.jpg"
+
 
 // News and Media Images 
 import newsImage1 from "../assets/NewsandMediaImages/i1.jpg";
@@ -32,6 +56,7 @@ import newsImage7 from "../assets/NewsandMediaImages/i7.jpg";
 
 import ActingPictures from "./ActingPictures";
 import NewsAndMediaCard from "./NewsAndMediaCard";
+import ModellingPictures from "./ModellingPictures";
 
 const images = [
   image1,
@@ -45,6 +70,11 @@ const images = [
   image9,
   image10,
 ];
+
+const modellingImages =[
+  m1,m2,m3,m4,m5,m6,m7,m8,m9,m10,m11,m12,m13,m14,m15,m16,m17,m18,m19,m20,m21,m22
+]
+
 
 // News and media items 
 // Create an array for news images
@@ -80,8 +110,8 @@ const Intro = () => {
       >
         Shayan Krishna
       </h1>
-      <div className="px-30 md:px-48 lg:px-[37vw] hover:scale-110 transition-transform duration-300 ease-in-out cursor-pointer hover:text-yellow-400 whitespace-nowrap">
-      <a href="https://youtube.com/@shayankrishna?si=H6XARzmAX_A8rJC0" className=" text-yellow-400 text-md font-medium hover:underline cursor-pointer ">@theblondedesi</a>
+      <div className="text-center hover:scale-110 transition-transform duration-300 ease-in-out cursor-pointer hover:text-yellow-400 whitespace-nowrap">
+      <a href="https://www.instagram.com/theblondedesi?igsh=NTc4MTIwNjQ2YQ%3D%3D&utm_source=qr" className=" text-yellow-400 text-md font-medium hover:underline cursor-pointer ">@theblondedesi</a>
       </div>
       <div
         data-aos="flip-right"
@@ -185,6 +215,13 @@ const Intro = () => {
         the globe. His ability to represent South Asian culture on a global
         stage has made him a recognized name in the fashion industry.
       </p>
+
+      {/* Modelling Pictures  */}
+      <div className="w-full max-w-[90vw] lg:max-w-[60vw] mx-auto overflow-x-hidden  border-gray-200 rounded-xl p-6 bg-gradient-to-b from-white to-gray-100">
+
+      <ModellingPictures images={modellingImages} />
+    </div>
+
       {/* Acting Section */}
 
       <h2
