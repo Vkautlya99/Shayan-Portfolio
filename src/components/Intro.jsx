@@ -171,7 +171,9 @@ const Intro = () => {
       </div>
       <div
         className="mt-8 flex flex-col md:flex-row justify-around items-center p-4 sm:gap-4"
-        data-aos="fade-up"
+        data-aos="flip-right"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000"
       >
         <img
           src={mainimage}

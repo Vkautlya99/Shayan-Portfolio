@@ -3,7 +3,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import navimage from "../assets/images/naviage.jpg";
 import { Link } from "react-router-dom";
-
+// import logoImage from "../assets/images/headshot1.jpg"
 const Header = () => {
   useEffect(() => {
     AOS.init({ duration: 1000, mirror: true, once: false });
