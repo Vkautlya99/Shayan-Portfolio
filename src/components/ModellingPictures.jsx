@@ -9,7 +9,7 @@ const ModellingPictures = ({ images =[] }) => {
             <img 
               src={image} 
               alt={`Acting Image ${index + 1}`} 
-              className="w-full  object-cover rounded-lg hover:scale-105 transition-transform  " 
+              className="w-full h-[40vw] lg:h-[25vw]  object-cover rounded-lg hover:scale-105 transition-transform  " 
             />
           </div>
         ))}

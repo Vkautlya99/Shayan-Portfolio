@@ -6,6 +6,9 @@ import AboutCard from "../components/AboutCard";
 import headshotGif from "../assets/images/icons8-film-roll.gif";
 import moreImages from "../assets/images/icons8-photo-gallery.gif";
 
+import headshot1 from "../assets/images/headshot1.jpg"
+import headshot2 from "../assets/images/headshot2.jpg"
+
 import about1image from "../assets/images/about1.jpg";
 import about2image from "../assets/images/about2.jpg";
 import about3image from "../assets/images/about3.jpg";
@@ -35,17 +38,19 @@ const About = () => {
   }, []);
 
   const HeadShotimages = [
+    headshot1,
+    headshot2,
+    about1image,
     about9image,
-    about10image,
     about11image,
-    about12image,
+    
     about13image,
     about18image,
   ];
 
   const MoreImages = [
     about1image, about2image, about3image, about4image, about5image,
-    about6image, about7image, about8image, about14image,
+    about6image, about7image, about8image,about10image,about12image, about14image,
     about20image, about21image,
     about22image, about23image, about24image, about25image,
   ];
