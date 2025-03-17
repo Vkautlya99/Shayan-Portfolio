@@ -93,9 +93,11 @@ const newsImages = [
 const Intro = () => {
   const videos = [
     { videoId: "uVjAGH-Nodc" },
-    { videoId: "Ntu8CvaxK2w" },
+    { videoId: "DHP35SHOU01", isInstagram: true },
+    { videoId: "C9By95CNpPh", isInstagram: true },
     { videoId: "32YJsVAcDng" },
     { videoId: "ONlkCVFWQSA" },
+    { videoId: "DFrulHkRAAJ", isInstagram: true },
   ];
 
   useEffect(() => {

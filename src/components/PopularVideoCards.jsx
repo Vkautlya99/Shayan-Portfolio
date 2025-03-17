@@ -1,12 +1,12 @@
 import React from "react";
 import YouTube from "react-youtube";
 
-const PopularVideoCards = ({ videoId, title }) => {
+const PopularVideoCards = ({ videoId, title, isInstagram }) => {
   const opts = {
     height: "400",
     width: "100%",
     playerVars: {
-      autoplay: 0, // Set to 1 for auto-play
+      autoplay: 0,
       controls: 1,
       modestbranding: 1,
       rel: 0,
@@ -20,9 +20,19 @@ const PopularVideoCards = ({ videoId, title }) => {
         {title}
       </h2>
 
-      {/* YouTube Video */}
+      {/* Video Embed */}
       <div className="w-full flex justify-center">
-        <YouTube className="w-full rounded-lg shadow-md" videoId={videoId} opts={opts} />
+        {isInstagram ? (
+          <iframe
+            className="w-full rounded-lg shadow-md"
+            src={`https://www.instagram.com/reel/${videoId}/embed`}
+            height="400"
+            frameBorder="0"
+            allowFullScreen
+          ></iframe>
+        ) : (
+          <YouTube className="w-full rounded-lg shadow-md" videoId={videoId} opts={opts} />
+        )}
       </div>
     </div>
   );

@@ -94,7 +94,7 @@ const Contact = () => {
               </h1>
               <p data-aos="fade-left" className="text-gray-600">
                 Looking for a collaboration? Have a project in mind? Fill out the form below
-                and I'll get back to you as soon as possible.
+                and the team of <strong className="text-yellow-500">SHAYAN KRISHNA</strong> will get back to you as soon as possible.
               </p>
             </div>
 

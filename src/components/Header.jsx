@@ -1,9 +1,9 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import navimage from "../assets/images/naviage.jpg";
+// import navimage from "../assets/images/naviage.jpg";
 import { Link } from "react-router-dom";
-// import logoImage from "../assets/images/headshot1.jpg"
+import logoImage from "../assets/images/about1.jpg"
 const Header = () => {
   useEffect(() => {
     AOS.init({ duration: 1000, mirror: true, once: false });
@@ -22,11 +22,11 @@ const Header = () => {
         data-aos-duration="1200"
       >
         <img
-          src={navimage}
+          src={logoImage}
           alt="Logo"
           className="w-[45px] h-[45px] rounded-full border-2 border-gray-400 shadow-md hover:scale-115 transition-transform duration-500"
-          // data-aos="zoom-in"
-          // data-aos-duration="1500"
+          data-aos="zoom-in"
+          data-aos-duration="1500"
         />
         <span className="hidden sm:flex">Shayan Krishna</span> 
       </Link>
