@@ -24,16 +24,16 @@ const WorkAndAchievements = () => {
   }, []);
 
   const achievements = [
-    "- Starred in Netflix's Monsters (Extra)",
-    "- Lead role in MAN UP, Waiting For Uber, and Drug Kills",
-    "- Upcoming Bollywood debut in The Unknown Mind",
-    "- Graduated from AMDA (American Musical and Dramatic Academy) in 2024",
-    "- Walked the ramp for top international designers and featured in global fashion magazines",
-    "- Recognized for humanitarian work and activism, featured on CNN, Hindustan Times, and Times Now Navbharat",
-    "- Social media influencer with a reach of over 40 million, promoting / - South Asian culture and unity",
-    "- 100 million views on Instagram in a span of 365 days",
-    "- Known for his famous dialogue, America Mata Ki Jai",
-    "- Has given interviews to world-famous news channels and well-known international news anchors",
+    "Starred in Netflix's Monsters (Extra)",
+    "Lead role in MAN UP, Waiting For Uber, and Drug Kills",
+    " Upcoming Bollywood debut in The Unknown Mind",
+    " Graduated from AMDA (American Musical and Dramatic Academy) in 2024",
+    " Walked the ramp for top international designers and featured in global fashion magazines",
+    " Recognized for humanitarian work and activism, featured on CNN, Hindustan Times, and Times Now Navbharat",
+    " Social media influencer with a reach of over 40 million, promoting - South Asian culture and unity",
+    " 100 million views on Instagram in the period of 150 days",
+    " Known for his famous dialogue, 'America Mata Ki Jai'",
+    " Has given interviews to world-famous news channels and well-known international news anchors",
   ];
 
   return (
@@ -139,7 +139,7 @@ const WorkAndAchievements = () => {
               <img src={netflix} alt="Shayan Krishna on Netflix" />
             </div>
             <div
-              className="bg-gradient-to-r from-teal-300 to-teal-700 w-full max-w-[90vw] lg:max-w-[60vw] mx-auto my-10 border-gray-200 shadow-lg rounded-xl p-6"
+              className="bg-gradient-to-r from-teal-300 to-teal-700 w-full max-w-[90vw] lg:max-w-[60vw] mx-auto my-10 border-gray-200 shadow-lg rounded-xl p-6 "
               data-aos="flip-left"
               data-aos-easing="ease-out-cubic"
               data-aos-duration="2000"
@@ -149,7 +149,7 @@ const WorkAndAchievements = () => {
                 data-aos-easing="linear"
                 data-aos-duration="1500" 
                 data-aos-mirror="true"
-                className="list-disc pl-6 text-lg text-gray-700 px-10 space-y-4">
+                className="text-white list-disc pl-6 text-lg  px-10 space-y-4">
                 {achievements.map((achievement, index) => (
                   <li
                     key={index}
