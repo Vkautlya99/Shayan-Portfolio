@@ -40,7 +40,7 @@ const About = () => {
   const HeadShotimages = [
     headshot1,
     headshot2,
-    about1image,
+    // about1image,
     about9image,
     about11image,
     
@@ -49,7 +49,7 @@ const About = () => {
   ];
 
   const MoreImages = [
-    about1image, about2image, about3image, about4image, about5image,
+    about2image, about3image, about4image, about5image,
     about6image, about7image, about8image,about10image,about12image, about14image,
     about20image, about21image,
     about22image, about23image, about24image, about25image,
@@ -77,14 +77,14 @@ const About = () => {
         <img src={headshotGif} alt="" className="text-xl" />
       </div>
 
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3 p-4 ">
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-1 p-4 ">
         {HeadShotimages.map((image, index) => (
           <div 
             key={index}
-            className="lg:w-[20vw] aspect-square mb-8 "
+            className="lg:w-[20vw] aspect-square mb-4 "
             data-aos="fade-up" data-aos-delay={index * 150}
           >
-            <AboutCard imageUrl={image} altText={`Image ${index + 1}`} />
+            <AboutCard imageUrl={image} altText={`Image ${index + 1}`} rounded="rounded-3xl" />
           </div>
         ))}
       </div>
@@ -117,7 +117,7 @@ const About = () => {
           <li><strong>Shoe Size:</strong> 11</li>
           <li><strong>Languages:</strong> English, Urdu, Hindi, Spanish, Punjabi, Sindhi</li>
         </ul>
-        <img data-aos="zoom-out-down" src={about1image} alt="" className="rounded-8xl hidden md:block mb-10" />
+        <img data-aos="zoom-out-down" src={about1image} alt="" className="rounded-3xl hidden md:block mb-10" />
       </div>
 
       {/* More Images Section with Animation */}
@@ -129,14 +129,14 @@ const About = () => {
         <img src={moreImages} alt="" className="w-10 h-10 lg:w-15 lg:h-15 rounded-full mt-4" />
       </div>
 
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3 p-4">
+      <div className=" grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3 p-4">
         {MoreImages.map((image, index) => (
           <div 
             key={index}
-            className="lg:w-[20vw] aspect-square"
+            className="lg:w-[20vw] rounded-4xl aspect-square"
             data-aos="fade-up" data-aos-delay={index * 100}
           >
-            <AboutCard imageUrl={image} altText={`More Image ${index + 1}`} />
+            <AboutCard imageUrl={image} altText={`More Image ${index + 1}`} rounded="rounded-3xl" />
           </div>
         ))}
       </div>
