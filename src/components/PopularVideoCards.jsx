@@ -1,7 +1,7 @@
 import React from "react";
 import YouTube from "react-youtube";
 
-const PopularVideoCards = ({ videoId, title, isInstagram }) => {
+const PopularVideoCards = ({ videoId,views, title, isInstagram }) => {
   const opts = {
     height: "400",
     width: "100%",
@@ -21,6 +21,7 @@ const PopularVideoCards = ({ videoId, title, isInstagram }) => {
       </h2>
 
       {/* Video Embed */}
+        <h1 className="text-center font-bold text-xl">{views} </h1>
       <div className="w-full flex justify-center">
         {isInstagram ? (
           <iframe

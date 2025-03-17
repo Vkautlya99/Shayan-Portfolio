@@ -92,12 +92,12 @@ const newsImages = [
 
 const Intro = () => {
   const videos = [
-    { videoId: "uVjAGH-Nodc" },
-    { videoId: "DHP35SHOU01", isInstagram: true },
-    { videoId: "C9By95CNpPh", isInstagram: true },
-    { videoId: "32YJsVAcDng" },
-    { videoId: "ONlkCVFWQSA" },
-    { videoId: "DFrulHkRAAJ", isInstagram: true },
+    { videoId: "uVjAGH-Nodc" ,views :"✨45 Million ➕✨" },
+    { videoId: "DHP35SHOU01",views :" ✨22 Million ➕✨", isInstagram: true },
+    { videoId: "C9By95CNpPh",views :"✨33 Million ➕✨", isInstagram: true },
+    { videoId: "32YJsVAcDng" ,views :""},
+    { videoId: "ONlkCVFWQSA",views :"" },
+    { videoId: "DFrulHkRAAJ",views :"", isInstagram: true },
   ];
 
   useEffect(() => {
@@ -290,7 +290,7 @@ const Intro = () => {
       <h1 className="text-3xl md:text-4xl font-bold text-gray-800 text-center mt-4">
         Most Popular Videos
       </h1>
-      {videos.map((video, index) => (
+      {videos.map((video, views, index) => (
         <div data-aos="fade-in" key={index}>
           <PopularVideoCards {...video} />
         </div>
