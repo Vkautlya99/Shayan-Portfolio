@@ -184,7 +184,8 @@ const Contact = () => {
           </div>
 
           {/* Contact Information Column */}
-          <div className="flex flex-col justify-center">
+          <div className="flex flex-col justify-center mt-10 lg:mt-20">
+            <h1 className="text-center text-2xl mb-4 font-semibold">Watch Out For Quick Response</h1>
             <div data-aos="flip-left"
      data-aos-easing="ease-out-cubic"
      data-aos-duration="2000" className=" lg:mt-46 bg-gradient-to-r from-teal-300 to-teal-700 rounded-xl shadow-xl p-8 text-white">
