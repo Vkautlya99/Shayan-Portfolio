@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { Helmet } from "react-helmet-async";
 
 import AboutCard from "../components/AboutCard";
 import headshotGif from "../assets/images/icons8-film-roll.gif";
@@ -8,6 +9,7 @@ import moreImages from "../assets/images/icons8-photo-gallery.gif";
 
 import headshot1 from "../assets/images/headshot1.jpg"
 import headshot2 from "../assets/images/headshot2.jpg"
+
 
 import about1image from "../assets/images/about1.jpg";
 import about2image from "../assets/images/about2.jpg";
@@ -30,7 +32,38 @@ import about22image from "../assets/images/about22.jpg";
 import about23image from "../assets/images/about23.jpg";
 import about24image from "../assets/images/about24.jpg";
 import about25image from "../assets/images/about25.jpg";
-import { Helmet } from "react-helmet-async";
+import mi1 from "../assets/MoreImages/morepic1.jpg"
+import mi2 from "../assets/MoreImages/morepic2.jpg"
+import mi3 from "../assets/MoreImages/morepic3.jpg"
+import mi4 from "../assets/MoreImages/morepic4.jpg"
+import mi14 from "../assets/MoreImages/morepic14.jpg"
+import mi5 from "../assets/MoreImages/morepic5.jpg"
+import mi6 from "../assets/MoreImages/morepic6.jpg"
+import mi7 from "../assets/MoreImages/morepic7.jpg"
+import mi8 from "../assets/MoreImages/morepic8.jpg"
+import mi9 from "../assets/MoreImages/morepic9.jpg"
+import mi10 from "../assets/MoreImages/morepic10.jpg"
+import mi11 from "../assets/MoreImages/morepic11.jpg"
+import mi12 from "../assets/MoreImages/morepic12.jpg"
+// import mi13 from "../assets/MoreImages/morepic13.jpg"
+import mi15 from "../assets/MoreImages/morepic15.jpg"
+import mi16 from "../assets/MoreImages/morepic16.jpg"
+import mi17 from "../assets/MoreImages/morepic17.jpg"
+import mi18 from "../assets/MoreImages/morepic18.jpg"
+import mi19 from "../assets/MoreImages/morepic19.jpg"
+import mi20 from "../assets/MoreImages/morepic20.jpg"
+import mi21 from "../assets/MoreImages/morepic21.jpg"
+import mi22 from "../assets/MoreImages/morepic22.jpg"
+import mi23 from "../assets/MoreImages/morepic23.jpg"
+import mi24 from "../assets/MoreImages/morepic24.jpg"
+import mi25 from "../assets/MoreImages/morepic25.jpg"
+import mi26 from "../assets/MoreImages/morepic26.jpg"
+import mi27 from "../assets/MoreImages/morepic27.jpg"
+import mi28 from "../assets/MoreImages/morepic28.jpg"
+import mi29 from "../assets/MoreImages/morepic29.jpg"
+// import mi30 from "../assets/MoreImages/morepic30.jpg"
+import mi31 from "../assets/MoreImages/morepic31.jpg"
+import mi32 from "../assets/MoreImages/morepic32.jpg"
 
 const About = () => {
   useEffect(() => {
@@ -49,10 +82,11 @@ const About = () => {
   ];
 
   const MoreImages = [
-    about2image, about3image, about4image, about5image,
+    mi23,mi6,mi7,mi20,mi21,about2image, about3image, about4image, about5image,
     about6image, about7image, about8image,about10image,about12image, about14image,
     about20image, about21image,
     about22image, about23image, about24image, about25image,
+    mi1,mi2, mi3,mi4,mi5,mi8, mi9,mi10,mi11,mi12,mi14,mi15,mi16,mi17,mi18, mi19,mi22,mi24,mi25,mi26,mi27,mi28,mi29,mi31,mi32
   ];
 
   return (
@@ -104,7 +138,9 @@ const About = () => {
       </div>
 
       <div 
-        data-aos="zoom-in"
+        data-aos="flip-left"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="2000"
         className="flex justify-between max-w-4xl mx-auto mt-10 p-6 rounded-2xl shadow-lg bg-gradient-to-r from-teal-300 to-teal-700 text-white text-lg mb-5 "
       >
         <ul className="space-y-2 text-center">

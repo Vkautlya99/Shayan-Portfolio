@@ -94,7 +94,7 @@ const WorkAndAchievements = () => {
 
       <div>
         <div data-aos="fade-left" data-aos-mirror="true" className="">
-          <h1 className="text-3xl lg:text-5xl text-center text-gray-700 font-bold my-4">
+          <h1 className="text-4xl lg:text-6xl text-center text-gray-800 font-bold my-4">
             Work
           </h1>
           <div className="space-y-6">
@@ -127,7 +127,7 @@ const WorkAndAchievements = () => {
           </div>
 
           <div>
-            <h2 className="text-3xl lg:text-5xl text-center text-gray-700 font-bold my-4" 
+            <h2 className="text-4xl lg:text-6xl text-center text-gray-800 font-bold my-4" 
               data-aos="fade-up" 
               data-aos-mirror="true">
               Achievements{" "}
