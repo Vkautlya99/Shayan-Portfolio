@@ -51,7 +51,7 @@ const WorkAndAchievements = () => {
 
       <div>
         <div data-aos="fade-left" data-aos-mirror="true" className="">
-          <h1 className="text-4xl lg:text-6xl text-center text-gray-800 font-bold my-4">Work</h1>
+          <h1 className="text-4xl lg:text-6xl text-center text-gray-800 font-bold mt-12 mb-6">Work</h1>
           <div className="space-y-6">
             <div data-aos="fade-right" data-aos-mirror="true" data-aos-duration="1200">
               <VideoCard videoSrc={video1} thumbnail={video1thumbnail} />
@@ -64,10 +64,10 @@ const WorkAndAchievements = () => {
             </div>
           </div>
           <div>
-            <h2 className="text-4xl lg:text-6xl text-center text-gray-800 font-bold my-4" data-aos="fade-up" data-aos-mirror="true">Achievements</h2>
+            <h2 className="text-4xl lg:text-6xl text-center text-gray-800 font-bold mt-14" data-aos="fade-up" data-aos-mirror="true">Achievements</h2>
             <div className="w-[68%] mx-auto my-4 rounded-lg shadow-lg" data-aos="zoom-in" data-aos-mirror="true">
               <img src={youtube} alt="Shayan Krishna YouTube feature" className="my-8 h-[90vw]" />
-              <img src={netflix} alt="Shayan Krishna on Netflix" />
+              <img src={netflix} alt="Shayan Krishna on Netflix" className="mt-40 not-first-of-type:mb-20" />
             </div>
             <div className="bg-gradient-to-r from-teal-300 to-teal-700 w-full max-w-[90vw] lg:max-w-[60vw] mx-auto my-10 border-gray-200 shadow-lg rounded-xl p-6" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000" data-aos-mirror="true">
               <ul data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500" data-aos-mirror="true" className="text-white list-disc pl-6 text-lg px-10 space-y-4">
