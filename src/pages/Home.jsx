@@ -6,7 +6,7 @@ const Home = () => {
   return (
     <>
       <Helmet>
-        <title>Shayan Krishna - Model, Actor, & Global Activist | Fashion & Social Impact</title>
+        <title>Shayan Krishna</title>
         <meta
           name="description"
           content="Shayan Krishna is an internationally renowned model, actor, and global activist, known for his contributions in fashion, film, and social causes. Explore his journey and impact."
