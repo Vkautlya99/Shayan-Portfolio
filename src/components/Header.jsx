@@ -28,7 +28,7 @@ const Header = () => {
           data-aos="zoom-in"
           data-aos-duration="1500"
         />
-        <span className="hidden sm:flex">Shayan Krishna</span> 
+        <span className="hidden sm:flex select-none">Shayan Krishna</span> 
       </Link>
 
       {/* Navigation Links */}

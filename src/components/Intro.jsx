@@ -107,7 +107,7 @@ const Intro = () => {
   return (
     <div className="w-full max-w-[90vw] lg:max-w-[60vw] mx-auto overflow-x-hidden my-10 border-gray-200 shadow-lg rounded-xl p-6 bg-gradient-to-b from-white to-gray-100">
       <h1
-        className="text-center uppercase text-5xl lg:text-6xl text-gray-800 font-extrabold font-mono tracking-wide drop-shadow-lg"
+        className="select-none text-center uppercase text-5xl lg:text-6xl text-gray-800 font-extrabold font-mono tracking-wide drop-shadow-lg"
         data-aos="fade-down"
       >
         Shayan Krishna
