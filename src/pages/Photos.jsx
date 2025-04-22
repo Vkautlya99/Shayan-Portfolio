@@ -64,6 +64,9 @@ import mi29 from "../assets/MoreImages/morepic29.jpg"
 // import mi30 from "../assets/MoreImages/morepic30.jpg"
 import mi31 from "../assets/MoreImages/morepic31.jpg"
 import mi32 from "../assets/MoreImages/morepic32.jpg"
+import mi33 from "../assets/MoreImages/morepic33.jpg"
+import mi34 from "../assets/MoreImages/morepic34.jpg"
+import mi35 from "../assets/MoreImages/morepic35.jpg"
 
 const About = () => {
   useEffect(() => {
@@ -86,7 +89,7 @@ const About = () => {
     about6image, about7image, about8image,about10image,about12image, about14image,
     about20image, about21image,
     about22image, about23image, about24image, about25image,
-    mi1,mi2, mi3,mi4,mi5,mi8, mi9,mi10,mi11,mi12,mi14,mi15,mi16,mi17,mi18, mi19,mi22,mi24,mi25,mi26,mi27,mi28,mi29,mi31,mi32
+    mi1,mi2, mi3,mi4,mi5,mi8, mi9,mi10,mi11,mi12,mi14,mi15,mi16,mi17,mi18, mi19,mi22,mi24,mi25,mi26,mi27,mi28,mi29,mi31,mi32, mi33,mi34,mi35
   ];
 
   return (
