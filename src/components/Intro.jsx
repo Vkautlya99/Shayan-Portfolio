@@ -92,8 +92,8 @@ const newsImages = [
 
 const Intro = () => {
   const videos = [
-    { videoId: "uVjAGH-Nodc" ,views :"✨45 Million ➕ Views✨" },
-    { videoId: "DHP35SHOU01",views :" ✨30 Million ➕✨", isInstagram: true },
+    { videoId: "uVjAGH-Nodc" ,views :"✨62 Million ➕ Views✨" },
+    { videoId: "DHP35SHOU01",views :" ✨40 Million ➕✨", isInstagram: true },
     { videoId: "C9By95CNpPh",views :"✨33 Million ➕✨", isInstagram: true },
     { videoId: "32YJsVAcDng" ,views :""},
     { videoId: "ONlkCVFWQSA",views :"" },
