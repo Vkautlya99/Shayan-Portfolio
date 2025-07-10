@@ -19,7 +19,7 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="select-none bg-gradient-to-r from-teal-300 to-teal-700 text-white py-12 relative overflow-hidden">
+    <footer className="select-none bg-gradient-to-r from-teal-400 to-teal-700 text-white py-12 relative overflow-hidden">
       <div className="max-w-7xl mx-auto">
 
       {/* Background Pattern */}
@@ -71,7 +71,7 @@ const Footer = () => {
             <ul className="space-y-2">
               <li>
                 <Link to="/" className="text-gray-200 hover:text-yellow-300 transition-colors duration-300 flex items-center">
-                  <span className="mr-2">›</span> Home
+                  <span className="mr-2 font-bold">›</span> Home
                 </Link>
               </li>
               <li>

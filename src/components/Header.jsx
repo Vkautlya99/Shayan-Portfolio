@@ -43,7 +43,7 @@ const Header = () => {
             key={item.name}
             to={item.path}
             data-aos="fade-left"
-            data-aos-delay={index * 200}
+            data-aos-delay={index * 250}
           >
             <h3 className="font-bold text-gray-300 md:text-lg hover:text-white hover:underline cursor-pointer hover:scale-110 transition-transform duration-300">
               {item.name}
