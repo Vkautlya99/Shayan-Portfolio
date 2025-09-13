@@ -3,7 +3,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 // import navimage from "../assets/images/naviage.jpg";
 import { Link } from "react-router-dom";
-import logoImage from "../assets/images/about1.jpg"
+import logoImage from "../assets/images/about1.jpg";
 const Header = () => {
   useEffect(() => {
     AOS.init({ duration: 1000, mirror: true, once: false });
@@ -11,7 +11,7 @@ const Header = () => {
 
   return (
     <nav
-      className="bg-gradient-to-r from-teal-300 to-teal-700 py-3 rounded-4xl my-2 w-[90%] max-w-[930px] mx-auto overflow-x-hidden flex items-center justify-between px-3 shadow-lg"
+      className="bg-gradient-to-r from-red-600 to-blue-600 py-3 rounded-4xl my-2 w-[90%] max-w-[930px] mx-auto overflow-x-hidden flex items-center justify-between px-3 shadow-lg"
       data-aos="fade-down"
     >
       {/* Logo/Image */}
@@ -24,11 +24,11 @@ const Header = () => {
         <img
           src={logoImage}
           alt="Logo"
-          className="w-[45px] h-[45px] rounded-full border-2 border-gray-400 shadow-md hover:scale-115 transition-transform duration-500"
+          className="w-[45px] h-[45px] rounded-full border-2 border-gray-400 shadow-md hover:scale-110 transition-all duration-500"
           data-aos="zoom-in"
           data-aos-duration="1500"
         />
-        <span className="hidden sm:flex select-none">Shayan Krishna</span> 
+        <span className="hidden sm:flex select-none text-white hover:scale-110 transition-all duration-500">Shayan Krishna</span>
       </Link>
 
       {/* Navigation Links */}

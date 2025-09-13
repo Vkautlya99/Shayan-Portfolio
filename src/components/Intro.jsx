@@ -107,13 +107,13 @@ const Intro = () => {
   return (
     <div className="w-full max-w-[90vw] lg:max-w-[60vw] mx-auto overflow-x-hidden my-10 border-gray-200 shadow-lg rounded-xl p-6 bg-gradient-to-b from-white to-gray-100">
       <h1
-        className="select-none text-center uppercase text-5xl lg:text-6xl text-gray-800 font-extrabold font-mono tracking-wide drop-shadow-lg"
+        className="select-none text-center uppercase text-5xl lg:text-6xl bg-gradient-to-r from-red-600 to-blue-600 bg-clip-text text-transparent font-extrabold font-mono tracking-wide drop-shadow-lg"
         data-aos="fade-down"
       >
         Shayan Krishna
       </h1>
       <div className="text-center hover:scale-110 transition-transform duration-300 ease-in-out cursor-pointer hover:text-yellow-400 whitespace-nowrap">
-      <a href="https://www.instagram.com/theblondedesi?igsh=NTc4MTIwNjQ2YQ%3D%3D&utm_source=qr" className=" text-yellow-400 text-md font-medium hover:underline cursor-pointer ">@theblondedesi</a>
+      <a href="https://www.instagram.com/theblondedesi?igsh=NTc4MTIwNjQ2YQ%3D%3D&utm_source=qr" className=" bg-gradient-to-r from-red-600 to-blue-600 bg-clip-text text-transparent text-md font-medium hover:underline cursor-pointer ">@theblondedesi</a>
       </div>
       <div
         data-aos="flip-right"
@@ -127,7 +127,7 @@ const Intro = () => {
         ].map((title, index) => (
           <h3
             key={index}
-            className="text-xl lg:text-5xl font-semibold text-yellow-500 font-mono hover:scale-110 transition-transform duration-300 ease-in-out cursor-pointer hover:text-yellow-400 whitespace-nowrap text-center"
+            className="text-xl lg:text-5xl font-semibold bg-gradient-to-r from-red-600 to-blue-600 bg-clip-text text-transparent font-mono hover:scale-110 transition-transform duration-300 ease-in-out cursor-pointer hover:text-yellow-400 whitespace-nowrap text-center"
           >
             {title}
           </h3>
@@ -165,7 +165,7 @@ const Intro = () => {
             href={social.url}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-yellow-500 text-xl font-bold flex items-center gap-2 hover:text-yellow-400 hover:scale-110 transition-all duration-300"
+            className="bg-gradient-to-r from-red-600 to-blue-600 bg-clip-text text-transparent text-xl font-bold flex items-center gap-2 hover:text-yellow-400 hover:scale-110 transition-all duration-300"
           >
             {social.icon} {social.name}
           </a>
