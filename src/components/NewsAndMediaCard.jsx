@@ -13,30 +13,30 @@ const NewsAndMediaCard = ({ images }) => {
   }, [images.length]);
 
   return (
-    <div className="carousel w-full max-w-4xl  mx-auto overflow-hidden " data-aos="fade-up">
-      <div 
+    <div className="carousel w-full max-w-4xl mx-auto overflow-hidden" data-aos="fade-up">
+      <div
         className="flex transition-transform duration-500 ease-in-out"
         style={{ transform: `translateX(-${currentIndex * 100}%)` }}
       >
         {images.map((img, index) => (
-          <div key={index} className="w-full flex-shrink-0">
-            <img 
-              src={img} 
-              alt={`News ${index + 1}`} 
-              className="w-full h-[900px] rounded-lg shadow-md"
+          <div key={index} className="w-full flex-shrink-0 flex justify-center items-center bg-black">
+            <img
+              src={img}
+              alt={`News ${index + 1}`}
+              className="w-full max-h-[500px] md:max-h-[400px] sm:max-h-[300px] object-contain rounded-lg shadow-md"
             />
           </div>
         ))}
       </div>
-      
-      {/* Optional: Add navigation dots */}
-      <div className="flex justify-center gap-2 -mt-14 md:-mt-30 lg:-mt-48">
+
+      {/* Navigation Dots */}
+      <div className="flex justify-center gap-2 -mt-14 md:-mt-10">
         {images.map((_, index) => (
           <button
             key={index}
             onClick={() => setCurrentIndex(index)}
-            className={`w-3 h-3 rounded-full ${
-              currentIndex === index ? 'bg-yellow-500' : 'bg-gray-300'
+            className={`w-3 h-3 rounded-full transition-all duration-300 ${
+              currentIndex === index ? 'bg-yellow-500 scale-110' : 'bg-gray-300'
             }`}
             aria-label={`Go to slide ${index + 1}`}
           />
