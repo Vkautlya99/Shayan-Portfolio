@@ -144,7 +144,7 @@ const About = () => {
         data-aos="flip-left"
         data-aos-easing="ease-out-cubic"
         data-aos-duration="2000"
-        className="flex justify-between max-w-4xl mx-auto mt-10 p-6 rounded-2xl shadow-lg bg-gradient-to-r from-teal-300 to-teal-700 text-white text-lg mb-5 "
+        className="flex justify-between max-w-4xl mx-auto mt-10 p-6 rounded-2xl shadow-lg bg-gradient-to-r from-red-600 to-blue-600 text-white text-lg mb-5 "
       >
         <ul className="space-y-2 text-center">
           <li><strong>Sex:</strong> Male</li>
