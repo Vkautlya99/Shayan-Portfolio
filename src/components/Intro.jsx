@@ -287,7 +287,7 @@ const Intro = () => {
       {/* Pass the newsImages array as a prop to NewsAndMediaCard */}
       <NewsAndMediaCard images={newsImages} />
 
-      <h1 className="text-3xl md:text-4xl font-bold text-gray-800 text-center mt-4">
+      <h1 className="text-3xl md:text-4xl font-bold text-gray-800 text-center mt-12">
         Most Popular Videos
       </h1>
       {videos.map((video, views, index) => (

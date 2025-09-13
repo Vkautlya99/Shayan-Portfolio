@@ -23,7 +23,7 @@ const NewsAndMediaCard = ({ images }) => {
             <img 
               src={img} 
               alt={`News ${index + 1}`} 
-              className="w-full h-auto rounded-lg shadow-md"
+              className="w-full h-[900px] rounded-lg shadow-md"
             />
           </div>
         ))}
