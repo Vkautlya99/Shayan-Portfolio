@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
-import founderImage from "../assets/images/founderimageVnY2.jpeg";
+import founderImage from "../assets/images/founderimageVnY.jpg";
 import { FaFacebookF, FaInstagram, FaEnvelope, FaPhone } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import "aos/dist/aos.css";
