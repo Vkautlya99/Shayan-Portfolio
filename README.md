@@ -2,7 +2,7 @@
 
 > React + Vite portfolio — documentation and setup guide
 
-Live demo: [https://shayankrishna.vercel.app](https://shayankrishna.vercel.app) (if available)
+Live demo: [https://shayankrishna.com](https://www.shayankrishna.com/)
 
 ---
 
