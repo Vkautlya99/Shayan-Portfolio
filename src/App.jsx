@@ -8,11 +8,13 @@ import Layout from "./Layout";
 import NotFoundPage from "./pages/404Page";
 import Workandachievements from "./pages/Workandachievements";
 import TnC from "./pages/TnC";
+import ScrollToTop from "./hook/ScrollToTop";
 
 const App = () => {
   return (
     <HelmetProvider>
       <BrowserRouter>
+      <ScrollToTop />
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />
